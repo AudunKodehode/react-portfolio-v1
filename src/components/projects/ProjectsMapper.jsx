@@ -18,8 +18,9 @@ export default function ProjectsMapper({ type, className }) {
             <img className="image" src={project.imageUrl} alt={project.name} />
           </a>
           </div>
+          
           { project.languages.map((language, index) => (
-            <div className="projectTags" key={index}>
+            <div key={index} >
             {language === "Frontendmentor" ? <div className="projectIcon"><SiFrontendmentor />Frontend Mentor</div>: ""}
             {language === "HTML" ? <div className="projectIcon"><SiHtml5 />HTML</div>: ""}
             {language === "CSS" ? <div className="projectIcon"><SiCss3 />CSS</div>: ""}
