@@ -1,0 +1,118 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding:0;
+}
+:root{
+    --landingBackground:#420404;
+    --projectsBackground:#1f1f1f9b;
+    --contactBackground:#756a6a;
+}
+nav {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    height: 80px;
+}
+nav h1::first-letter{
+color: red;
+}
+div.header {
+  display: flex;
+  align-items: center;
+}
+
+.navItems {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.navItem active::first-letter{
+    color: red;
+}
+.navItem{
+    border:none;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: large;
+    font-family: 'Titan One', sans-serif;
+}
+
+.contactComponents{
+    display:flex;
+    gap: 30px;
+}
+
+.contactComponent{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+.contactComponent svg{
+    width: 30px;
+    height: 30px;
+}
+
+.landingPage{
+    height: calc( 100vh - 80px );
+    display:flex;
+    flex-direction: column;
+    background: var(--landingBackground);
+    gap: 5vh;
+}
+.projectsPage{
+    height: calc( 100vh - 80px );
+    display:flex;
+    flex-direction: column;
+    background: var(--projectsBackground);
+    gap: 5vh;
+}
+.contactPage{
+    height: calc( 100vh - 80px );
+    display:flex;
+    flex-direction: column;
+    background: var(--contactBackground);
+    gap: 5vh;
+}
+
+
+.projects{
+    display:flex;
+}
+.frontendMentor{
+    display:flex;
+}
+
+.projectCard{
+    width: 300px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
+.projectCard .description {
+    text-align: center;
+    width: 80%;
+}
+.projectCard .languages {
+    display:flex;
+    flex-direction: column ;
+}
+.projectCard .imagewrapper{
+    width: 100px;
+    height: 100px;
+}
+.projectCard .image{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
