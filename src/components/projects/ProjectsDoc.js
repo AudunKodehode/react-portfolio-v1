@@ -2,11 +2,11 @@ const arduinoArray = [
     
     {
         name: "Arduino Nano MIDI-Controller ",
-        url: "https://github.com/AudunKodehode/esp8266-0.96-oled-module-base/tree/main",
+        url: "https://github.com/AudunKodehode/Arduino-Nano-Midi-Controller",
         repository: "https://github.com/AudunKodehode/Arduino-Nano-Midi-Controller",
         languages: ["Arduino", "MIDI", "3Dprint"],
         description: "Arduino-Nano code and STL files for creating a 4-button guitar pedal box to control MIDI on PC.",
-        imageUrl: "https://github.com/AudunKodehode/Arduino-Nano-Midi-Controller/blob/main/20231030_142520.jpg?raw=true"
+        imageUrl: "https://github.com/AudunKodehode/Arduino-Nano-Midi-Controller/blob/main/Arduino-Nano-Midi-Controller.png?raw=true"
     },
     {
         name: "ESP8266 Nightscout Display",

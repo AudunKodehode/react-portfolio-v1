@@ -5,7 +5,8 @@ import {
   arduinoArray,
 } from "../components/projects/ProjectsDoc";
 
-export default function Projectspage() {
+export default function Projectspage({setActive}) {
+  setActive("Projects")
   return (
     <div className="projectsPage">
       <div className="projectTab">

@@ -1,10 +1,9 @@
 import Navitem from "./Navitem";
 import ContactComponent from "../Contact/ContactComponent";
 import { RiLinkedinBoxLine, RiGithubFill  } from "react-icons/ri";
-import { useState } from "react";
-export default function NavBar() {
 
-  const [active, setActive] = useState(false);
+export default function NavBar({active, setActive}) {
+
   return (
     <nav>
       <h1>Audun</h1>

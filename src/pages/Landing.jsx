@@ -1,7 +1,8 @@
-export default function Landingpage(){
+export default function Landingpage({setActive}){
+  setActive("Home");
     return (
         <div className="landingPage">
-            <h1>landing</h1>
+            
         </div>
     )
 }

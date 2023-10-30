@@ -4,10 +4,17 @@
   padding: 0;
 }
 
+$navBarBackground: #2a2076;
+$navBarImage : url();
 $landingBackground: #b36565;
+$landingImage : url();
 $projectsBackground: #1f1f1f9b;
+$projectsImage : url();
 $contactBackground: #756a6a;
+$contactImage : url();
+
 nav {
+  background: $navBarBackground;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -48,8 +55,6 @@ nav {
           width: 50px;
           height: 50px;
           color: black;
-          h4 {
-          }
         }
       }
       a:active {
@@ -71,12 +76,14 @@ nav {
 }
 
 .projectsPage {
-  height: calc(100vh - 80px);
+  overflow-x: hidden;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   background: $projectsBackground;
-  gap: 100px;
+  gap: 40px;
   h1 {
+    text-decoration: underline;
   }
   .projects {
     display: flex;
@@ -89,8 +96,8 @@ nav {
   }
 }
 .projectCard {
-  width: 300px;
-  height: 240px;
+  width: fit-content;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -104,13 +111,34 @@ nav {
     flex-direction: column;
   }
   .imagewrapper {
-    width: 100px;
-    height: 100px;
+    width: 180px;
+    height: 180px;
   }
   .image {
     width: 100%;
     height: 100%;
   }
+  .imageTags {
+    .tags {
+      .projectIcon {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+  }
+}
+.imageTags {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+}
+
+.projectIcon svg,
+.projectIcon img {
+  width: 40px;
+  height: 40px;
 }
 
 .contactPage {

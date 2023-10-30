@@ -5,6 +5,7 @@
 }
 
 nav {
+  background: #2a2076;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,11 +66,15 @@ nav .contactComponents .contactComponent a:active svg {
 }
 
 .projectsPage {
+  overflow-x: hidden;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   background: rgba(31, 31, 31, 0.6078431373);
-  gap: 100px;
-  padding-bottom: 5vh;
+  gap: 40px;
+}
+.projectsPage h1 {
+  text-decoration: underline;
 }
 .projectsPage .projects {
   display: flex;
@@ -82,8 +87,9 @@ nav .contactComponents .contactComponent a:active svg {
 }
 
 .projectCard {
-  width: 300px;
-  height: 240px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,15 +104,30 @@ nav .contactComponents .contactComponent a:active svg {
   flex-direction: column;
 }
 .projectCard .imagewrapper {
-  width: 100px;
-  height: 100px;
+  width: 180px;
+  height: 180px;
 }
 .projectCard .image {
   width: 100%;
   height: 100%;
 }
-.projectIcon{
+.projectCard .imageTags .tags .projectIcon {
   display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.imageTags {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+}
+
+.projectIcon svg,
+.projectIcon img {
+  width: 40px;
+  height: 40px;
 }
 
 .contactPage {
