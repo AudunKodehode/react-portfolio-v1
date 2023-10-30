@@ -19,6 +19,9 @@ nav {
 nav h1::first-letter{
 color: red;
 }
+.navItems .active::first-letter{
+    color: red;
+}
 div.header {
   display: flex;
   align-items: center;

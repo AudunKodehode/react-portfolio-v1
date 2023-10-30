@@ -1,26 +1,31 @@
 import Navitem from "./Navitem";
 import ContactComponent from "../Contact/ContactComponent";
-import { RiLinkedinBoxLine, RiMailLine, RiGithubFill  } from "react-icons/ri";
+import { RiLinkedinBoxLine, RiGithubFill  } from "react-icons/ri";
+import { useState } from "react";
 export default function NavBar() {
+
+  const [active, setActive] = useState(false);
   return (
     <nav>
       <h1>Audun</h1>
 
       <div className="navItems">
-        <Navitem className="navItem" href="/">
+        <Navitem onClick={() => setActive("Home")} className={` navItem ${active === "Home" ? "active" : ""}`} to="/">
           Home
         </Navitem>
-        <Navitem className="navItem" href="/projects">
+
+        <Navitem onClick={() => setActive("Projects")} className={` navItem ${active === "Projects" ? "active" : ""}`} to="/projects">
           Projects
         </Navitem>
-        <Navitem className="navItem" href="/contact">
+
+        <Navitem onClick={() => setActive("Contact")} className={` navItem ${active === "Contact" ? "active" : ""}`} to="/contact">
           Contact
         </Navitem>
+
       </div>
       <div className="contactComponents">
       <ContactComponent href="https://github.com/audunKodehode" text="Github"><RiGithubFill /></ContactComponent>
       <ContactComponent href="https://www.linkedin.com/in/audun-holmen-9b595926b/" text="Linkedin"><RiLinkedinBoxLine / ></ContactComponent>
-      <ContactComponent href="" text="Email"><RiMailLine /></ContactComponent>
       </div>
 
 

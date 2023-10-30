@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Router>
-        <NavBar />
+        <NavBar  />
         <Routes>
           <Route path="/" element={<Landingpage />} />
           <Route path="/projects" element={<Projectspage />} />
