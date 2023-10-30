@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+$landingBackground: #b36565;
+$projectsBackground: #1f1f1f9b;
+$contactBackground: #756a6a;
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  height: 80px;
+  h1::first-letter {
+    color: red;
+  }
+  .navItems {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    .navItem {
+      border: none;
+      border-radius: 5px;
+      padding: 15px;
+      font-size: large;
+      font-family: "Titan One", sans-serif;
+      color: black;
+      text-decoration: none;
+      font-size: 20px;
+    }
+    .active::first-letter {
+      color: red;
+    }
+  }
+  .contactComponents {
+    display: flex;
+    gap: 30px;
+    .contactComponent {
+      a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        svg {
+          width: 50px;
+          height: 50px;
+          color: black;
+          h4 {
+          }
+        }
+      }
+      a:active {
+        color: black;
+        text-decoration: none;
+        svg {
+          color: black;
+        }
+      }
+    }
+  }
+}
+.landingPage {
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  background: $landingBackground;
+  gap: 5vh;
+}
+
+.projectsPage {
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  background: $projectsBackground;
+  gap: 100px;
+  h1 {
+  }
+  .projects {
+    display: flex;
+  }
+  .frontendMentor {
+    display: flex;
+  }
+  .arduino {
+    display: flex;
+  }
+}
+.projectCard {
+  width: 300px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  .description {
+    text-align: center;
+    width: 80%;
+  }
+  .languages {
+    display: flex;
+    flex-direction: column;
+  }
+  .imagewrapper {
+    width: 100px;
+    height: 100px;
+  }
+  .image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.contactPage {
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  background: $contactBackground;
+  gap: 5vh;
+}

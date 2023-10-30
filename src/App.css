@@ -1,121 +1,118 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
 
-*{
-    margin: 0;
-    box-sizing: border-box;
-    padding:0;
-}
-:root{
-    --landingBackground:#420404;
-    --projectsBackground:#1f1f1f9b;
-    --contactBackground:#756a6a;
-}
 nav {
   display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-    height: 80px;
-}
-nav h1::first-letter{
-color: red;
-}
-.navItems .active::first-letter{
-    color: red;
-}
-div.header {
-  display: flex;
+  justify-content: center;
   align-items: center;
+  gap: 100px;
+  height: 80px;
 }
-
-.navItems {
+nav h1::first-letter {
+  color: red;
+}
+nav .navItems {
   display: flex;
   gap: 40px;
   justify-content: center;
   align-items: center;
 }
-.navItem active::first-letter{
-    color: red;
+nav .navItems .navItem {
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: large;
+  font-family: "Titan One", sans-serif;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
 }
-.navItem{
-    border:none;
-    border-radius: 5px;
-    padding: 15px;
-    font-size: large;
-    font-family: 'Titan One', sans-serif;
+nav .navItems .active::first-letter {
+  color: red;
 }
-
-.contactComponents{
-    display:flex;
-    gap: 30px;
+nav .contactComponents {
+  display: flex;
+  gap: 30px;
 }
-
-.contactComponent{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height: 60px;
+nav .contactComponents .contactComponent a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
 }
-.contactComponent svg{
-    width: 30px;
-    height: 30px;
+nav .contactComponents .contactComponent a svg {
+  width: 50px;
+  height: 50px;
+  color: black;
 }
-
-.landingPage{
-    height: calc( 100vh - 80px );
-    display:flex;
-    flex-direction: column;
-    background: var(--landingBackground);
-    gap: 5vh;
+nav .contactComponents .contactComponent a:active {
+  color: black;
+  text-decoration: none;
 }
-.projectsPage{
-    height: calc( 100vh - 80px );
-    display:flex;
-    flex-direction: column;
-    background: var(--projectsBackground);
-    gap: 5vh;
-}
-.contactPage{
-    height: calc( 100vh - 80px );
-    display:flex;
-    flex-direction: column;
-    background: var(--contactBackground);
-    gap: 5vh;
+nav .contactComponents .contactComponent a:active svg {
+  color: black;
 }
 
-
-.projects{
-    display:flex;
+.landingPage {
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  background: #b36565;
+  gap: 5vh;
 }
-.frontendMentor{
-    display:flex;
+
+.projectsPage {
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  background: rgba(31, 31, 31, 0.6078431373);
+  gap: 100px;
+}
+.projectsPage .projects {
+  display: flex;
+}
+.projectsPage .frontendMentor {
+  display: flex;
+}
+.projectsPage .arduino {
+  display: flex;
 }
 
-.projectCard{
-    width: 300px;
-    height: 240px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid black;
+.projectCard {
+  width: 300px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
 }
 .projectCard .description {
-    text-align: center;
-    width: 80%;
+  text-align: center;
+  width: 80%;
 }
 .projectCard .languages {
-    display:flex;
-    flex-direction: column ;
+  display: flex;
+  flex-direction: column;
 }
-.projectCard .imagewrapper{
-    width: 100px;
-    height: 100px;
+.projectCard .imagewrapper {
+  width: 100px;
+  height: 100px;
 }
-.projectCard .image{
-    width: 100%;
-    height: 100%;
+.projectCard .image {
+  width: 100%;
+  height: 100%;
+}
+.projectIcon{
+  display: flex;
 }
 
-
-
-
-
+.contactPage {
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  background: #756a6a;
+  gap: 5vh;
+}/*# sourceMappingURL=App.css.map */

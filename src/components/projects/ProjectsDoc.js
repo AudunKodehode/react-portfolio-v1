@@ -1,4 +1,25 @@
+const arduinoArray = [
+    
+    {
+        name: "Arduino Nano MIDI-Controller ",
+        url: "https://github.com/AudunKodehode/esp8266-0.96-oled-module-base/tree/main",
+        repository: "https://github.com/AudunKodehode/Arduino-Nano-Midi-Controller",
+        languages: ["Arduino", "MIDI", "3Dprint"],
+        description: "Arduino-Nano code and STL files for creating a 4-button guitar pedal box to control MIDI on PC.",
+        imageUrl: "https://github.com/AudunKodehode/Arduino-Nano-Midi-Controller/blob/main/20231030_142520.jpg?raw=true"
+    },
+    {
+        name: "ESP8266 Nightscout Display",
+        url: "https://github.com/AudunKodehode/esp8266-0.96-oled-module-base/tree/main",
+        repository: "https://github.com/AudunKodehode/esp8266-0.96-oled-module-base/tree/main",
+        languages: ["Arduino", "ESP8266", "API", "NightScout", "3Dprint"],
+        description: "Fetch data from Nightscout and display it on 0.96'' OLED display",
+        imageUrl: "https://github.com/AudunKodehode/esp8266-0.96-oled-module-base/blob/main/esp8266-0.96-oled-module-nightscout/ESP8266NIGHTSCOUT.jpg?raw=true"
+    },
+]
+
 const projectsArray = [
+
     {
         name: "Color-Generator",
         url: "https://audunkodehode.github.io/ColorGenerator/",
@@ -8,7 +29,7 @@ const projectsArray = [
         imageUrl: "https://github.com/AudunKodehode/ColorGenerator/blob/main/image.png?raw=true"
     },
     {
-        name: "Kron-eller-mynt",
+        name: "Heads or tails",
         url: "https://audunkodehode.github.io/Kron-eller-mynt/",
         repository: "https://github.com/AudunKodehode/Kron-eller-mynt",
         languages: ["HTML", "CSS", "JavaScript"],
@@ -76,4 +97,4 @@ const frontendmentorArray = [
     }
 ];
 
-export { projectsArray, frontendmentorArray };
+export { projectsArray, frontendmentorArray, arduinoArray };
