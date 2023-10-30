@@ -3,8 +3,23 @@
   box-sizing: border-box;
   padding: 0;
 }
+a {
+  text-decoration: none;
+}
+$pallet1a: #222222;
+$pallet1b: #FFFFFF;
+$pallet1c: #4B4E6D;
+$pallet1d: #84DCC6;
+$pallet1e: #95A3B3;
 
-$navBarBackground: #2a2076;
+$pallet2a: #011627;
+$pallet2b: #010B14;
+$pallet2c: #074C88;
+$pallet2d: #8BC2F9;
+$pallet2e: #1b74c1;
+
+
+$navBarBackground: #074C88;
 $navBarImage : url();
 $landingBackground: #b36565;
 $landingImage : url();
@@ -13,6 +28,15 @@ $projectsImage : url();
 $contactBackground: #756a6a;
 $contactImage : url();
 
+$text1: #924c98;
+$text2: #29212a;
+$text3: #000000;
+$text4: #29212a;
+$text5: #000000;
+
+$textAccent: #4B4E6D;
+$textAccent2: #8083a0;
+
 nav {
   background: $navBarBackground;
   display: flex;
@@ -20,8 +44,11 @@ nav {
   align-items: center;
   gap: 100px;
   height: 80px;
+  h1{
+    color: $text1;
+  }
   h1::first-letter {
-    color: red;
+    color: $textAccent;
   }
   .navItems {
     display: flex;
@@ -34,12 +61,12 @@ nav {
       padding: 15px;
       font-size: large;
       font-family: "Titan One", sans-serif;
-      color: black;
+      color: $text2;
       text-decoration: none;
       font-size: 20px;
     }
     .active::first-letter {
-      color: red;
+      color: $textAccent2;
     }
   }
   .contactComponents {
@@ -50,7 +77,7 @@ nav {
         display: flex;
         align-items: center;
         text-decoration: none;
-        color: black;
+        color: $text1;
         svg {
           width: 50px;
           height: 50px;
@@ -58,7 +85,6 @@ nav {
         }
       }
       a:active {
-        color: black;
         text-decoration: none;
         svg {
           color: black;
@@ -102,7 +128,11 @@ nav {
   flex-direction: column;
   align-items: center;
   border: 1px solid black;
+  a h2{
+    color: $text3;
+  }
   .description {
+    color: $text4;
     text-align: center;
     width: 80%;
   }

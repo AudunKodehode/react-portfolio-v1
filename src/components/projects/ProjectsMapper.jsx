@@ -19,10 +19,10 @@ export default function ProjectsMapper({ type, className }) {
           </div>
           
           <div className="tags">
-          { project.languages.map((language) => (
-            <>
+          { project.languages.map((language, index) => (
+            <div className="tag" key={index}>
               <ProjectIcon type={language} />
-            </>
+              </div>
           ))}
           </div>
           </div>

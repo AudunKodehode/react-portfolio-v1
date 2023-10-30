@@ -4,16 +4,23 @@
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 nav {
-  background: #2a2076;
+  background: #074C88;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 100px;
   height: 80px;
 }
+nav h1 {
+  color: #924c98;
+}
 nav h1::first-letter {
-  color: red;
+  color: #4B4E6D;
 }
 nav .navItems {
   display: flex;
@@ -27,12 +34,12 @@ nav .navItems .navItem {
   padding: 15px;
   font-size: large;
   font-family: "Titan One", sans-serif;
-  color: black;
+  color: #29212a;
   text-decoration: none;
   font-size: 20px;
 }
 nav .navItems .active::first-letter {
-  color: red;
+  color: #8083a0;
 }
 nav .contactComponents {
   display: flex;
@@ -42,7 +49,7 @@ nav .contactComponents .contactComponent a {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: black;
+  color: #924c98;
 }
 nav .contactComponents .contactComponent a svg {
   width: 50px;
@@ -50,7 +57,6 @@ nav .contactComponents .contactComponent a svg {
   color: black;
 }
 nav .contactComponents .contactComponent a:active {
-  color: black;
   text-decoration: none;
 }
 nav .contactComponents .contactComponent a:active svg {
@@ -95,7 +101,11 @@ nav .contactComponents .contactComponent a:active svg {
   align-items: center;
   border: 1px solid black;
 }
+.projectCard a h2 {
+  color: #000000;
+}
 .projectCard .description {
+  color: #29212a;
   text-align: center;
   width: 80%;
 }
