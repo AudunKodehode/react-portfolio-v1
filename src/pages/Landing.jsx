@@ -2,7 +2,7 @@ export default function Landingpage(){
     return (
         <div className="landingPage">
             <div className="main">
-                <div className="imageplaceholder "></div>
+                <div className="imageplaceholder fadeIn"></div>
                 <div className="textplaceholder slideLeft">
                     <h1>Audun Holmen</h1>
                     <h2>Software Engineer</h2>

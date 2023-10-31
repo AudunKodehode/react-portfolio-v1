@@ -9,7 +9,7 @@ a {
 }
 
 nav {
-  background: #074C88;
+  background: #074c88;
 }
 
 .landingPage {
@@ -35,7 +35,7 @@ nav h1 {
   color: #924c98;
 }
 nav h1::first-letter {
-  color: #4B4E6D;
+  color: #4b4e6d;
 }
 nav .navItems {
   display: flex;
@@ -54,12 +54,7 @@ nav .navItems .navItem {
   font-size: 20px;
 }
 nav .navItems .active::first-letter {
-  text-decoration: underline;
   color: #8083a0;
-}
-nav .navItems .active {
-  -webkit-text-decoration: dashed;
-          text-decoration: dashed;
 }
 nav .contactComponents {
   display: flex;
@@ -110,28 +105,21 @@ nav .contactComponents .contactComponent a:active svg {
   text-align: left;
 }
 .projectsPage {
-  overflow-x: hidden;
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  align-items: center;
 }
-.projectsPage h1 {
-  text-decoration: underline;
-}
-.projectsPage .projects {
+.projectsPage .projectTab .projects {
   display: flex;
 }
-.projectsPage .frontendMentor {
+.projectsPage .projectTab .arduino {
   display: flex;
 }
-.projectsPage .arduino {
+.projectsPage .projectTab .frontendMentor {
   display: flex;
 }
-
 .projectCard {
-  width: -moz-fit-content;
-  width: fit-content;
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -146,33 +134,38 @@ nav .contactComponents .contactComponent a:active svg {
   text-align: center;
   width: 80%;
 }
-.projectCard .languages {
-  display: flex;
-  flex-direction: column;
-}
 .projectCard .imagewrapper {
   width: 180px;
   height: 180px;
 }
+.projectCard .languages {
+  display: flex;
+  flex-direction: column;
+}
 .projectCard .image {
   width: 100%;
   height: 100%;
+  border-radius: 5px;
+}
+.projectCard .imageTags {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+}
+.projectCard .imageTags .tags {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
 }
 .projectCard .imageTags .tags .projectIcon {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-
-.imageTags {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  padding: 10px;
-}
-
-.projectIcon svg,
-.projectIcon img {
+.projectCard .imageTags .tags .projectIcon svg,
+.projectCard .imageTags .tags .projectIcon img {
   width: 40px;
   height: 40px;
 }
@@ -184,6 +177,10 @@ nav .contactComponents .contactComponent a:active svg {
   gap: 20px;
 }
 
+.fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
 .slideRight {
   animation: slideRight 600ms ease-in-out;
 }
@@ -192,23 +189,27 @@ nav .contactComponents .contactComponent a:active svg {
   animation: slideLeft 600ms ease-in-out;
 }
 
-@keyframes slideRight {
+@keyframes fadeIn {
   0% {
-    opacity: 0.75;
-    transform: translateX(-20%);
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(-20%);
+  }
+  100% {
     transform: translateX(0);
   }
 }
 @keyframes slideLeft {
   0% {
-    opacity: 1;
     transform: translateX(50%);
   }
   100% {
-    opacity: 1;
     transform: translateX(0);
   }
 }/*# sourceMappingURL=App.css.map */
