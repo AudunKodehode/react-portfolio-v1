@@ -1,8 +1,8 @@
 
-export default function Contactpage({setActive}) {
-  setActive("Contact");
+export default function Contactpage() {
   return (
     <div className="contactPage">
+
 
 
 

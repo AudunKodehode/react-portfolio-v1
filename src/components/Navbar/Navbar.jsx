@@ -2,22 +2,23 @@ import Navitem from "./Navitem";
 import ContactComponent from "../Contact/ContactComponent";
 import { RiLinkedinBoxLine, RiGithubFill  } from "react-icons/ri";
 
-export default function NavBar({active, setActive}) {
+export default function NavBar({pathname}) {
 
   return (
     <nav>
       <h1>Audun</h1>
 
       <div className="navItems">
-        <Navitem onClick={() => setActive("Home")} className={` navItem ${active === "Home" ? "active" : ""}`} to="/">
+        <Navitem className={` navItem ${pathname === "/" ? "active" : ""}`} to="/">
           Home
         </Navitem>
 
-        <Navitem onClick={() => setActive("Projects")} className={` navItem ${active === "Projects" ? "active" : ""}`} to="/projects">
+        <Navitem className={` navItem ${pathname === "/projects" ? "active" : ""}`} to="/projects">
           Projects
         </Navitem>
 
-        <Navitem onClick={() => setActive("Contact")} className={` navItem ${active === "Contact" ? "active" : ""}`} to="/contact">
+        
+        <Navitem className={` navItem ${pathname === "/contact" ? "active" : ""}`} to="/contact">
           Contact
         </Navitem>
 

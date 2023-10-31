@@ -10,6 +10,21 @@ a {
 
 nav {
   background: #074C88;
+}
+
+.landingPage {
+  background: #b36565;
+}
+
+.projectsPage {
+  background: rgba(31, 31, 31, 0.6078431373);
+}
+
+.contactPage {
+  background: #756a6a;
+}
+
+nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +39,7 @@ nav h1::first-letter {
 }
 nav .navItems {
   display: flex;
-  gap: 40px;
+  gap: 12px;
   justify-content: center;
   align-items: center;
 }
@@ -39,7 +54,12 @@ nav .navItems .navItem {
   font-size: 20px;
 }
 nav .navItems .active::first-letter {
+  text-decoration: underline;
   color: #8083a0;
+}
+nav .navItems .active {
+  -webkit-text-decoration: dashed;
+          text-decoration: dashed;
 }
 nav .contactComponents {
   display: flex;
@@ -64,19 +84,36 @@ nav .contactComponents .contactComponent a:active svg {
 }
 
 .landingPage {
-  height: calc(100vh - 80px);
+  height: calc(150vh - 80px);
   display: flex;
   flex-direction: column;
-  background: #b36565;
   gap: 5vh;
 }
-
+.landingPage .main {
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12%;
+}
+.landingPage .main .imageplaceholder {
+  width: 400px;
+  height: 400px;
+  background: rgb(28, 90, 28);
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.landingPage .main .textplaceholder {
+  width: 500px;
+}
+.landingPage .main h1 {
+  text-align: left;
+}
 .projectsPage {
   overflow-x: hidden;
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
-  background: rgba(31, 31, 31, 0.6078431373);
   gap: 40px;
 }
 .projectsPage h1 {
@@ -144,6 +181,34 @@ nav .contactComponents .contactComponent a:active svg {
   height: calc(100vh - 80px);
   display: flex;
   flex-direction: column;
-  background: #756a6a;
-  gap: 5vh;
+  gap: 20px;
+}
+
+.slideRight {
+  animation: slideRight 600ms ease-in-out;
+}
+
+.slideLeft {
+  animation: slideLeft 600ms ease-in-out;
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0.75;
+    transform: translateX(-20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }/*# sourceMappingURL=App.css.map */

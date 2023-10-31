@@ -37,8 +37,40 @@ $text5: #000000;
 $textAccent: #4B4E6D;
 $textAccent2: #8083a0;
 
-nav {
+$background1 : url('/public/backgrounds/a.svg');
+
+
+nav{
   background: $navBarBackground;
+  // -----------
+  // background-image: $background1;
+  // background-position: center;
+  // background-repeat: no-repeat;
+}
+.landingPage{
+  background: $landingBackground;
+  // -----------
+  // background-image: $background1;
+  // background-position: center;
+  // background-repeat: no-repeat;
+}
+.projectsPage{
+  background: $projectsBackground;
+  // -----------
+  // background-image: $background1;
+  // background-position: center;
+  // background-repeat: no-repeat;
+}
+.contactPage{
+  background: $contactBackground;
+  // -----------
+  // background-image: $background1;
+  // background-position: center;
+  // background-repeat: no-repeat;
+}
+
+
+nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,7 +84,7 @@ nav {
   }
   .navItems {
     display: flex;
-    gap: 40px;
+    gap: 12px;
     justify-content: center;
     align-items: center;
     .navItem {
@@ -66,7 +98,11 @@ nav {
       font-size: 20px;
     }
     .active::first-letter {
+      text-decoration: underline;
       color: $textAccent2;
+    }
+    .active{
+      text-decoration: dashed;
     }
   }
   .contactComponents {
@@ -94,11 +130,33 @@ nav {
   }
 }
 .landingPage {
-  height: calc(100vh - 80px);
+  height: calc(150vh - 80px);
   display: flex;
   flex-direction: column;
-  background: $landingBackground;
   gap: 5vh;
+  .main{
+    height: calc(100vh - 80px);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12%;
+    .imageplaceholder{
+      width: 400px;
+      height: 400px; 
+      background: rgb(28, 90, 28);
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+    .textplaceholder{
+      width: 500px;
+    }
+    h1{
+      text-align: left;
+    }
+    p{
+
+    }
+  }
 }
 
 .projectsPage {
@@ -106,7 +164,6 @@ nav {
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
-  background: $projectsBackground;
   gap: 40px;
   h1 {
     text-decoration: underline;
@@ -175,6 +232,38 @@ nav {
   height: calc(100vh - 80px);
   display: flex;
   flex-direction: column;
-  background: $contactBackground;
-  gap: 5vh;
+  gap: 20px;
+
+
+
 }
+
+
+.slideRight {
+  animation: slideRight 600ms ease-in-out;
+}
+.slideLeft {
+  animation: slideLeft 600ms ease-in-out;
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0.75;
+    transform: translateX(-20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
