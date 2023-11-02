@@ -1,6 +1,7 @@
-import { SiHtml5, SiCss3, SiJavascript, SiMidi, SiArduino, SiFrontendmentor } from "react-icons/si";
+import { SiHtml5, SiCss3, SiJavascript, SiMidi, SiArduino, SiFrontendmentor, SiSharp } from "react-icons/si";
 import logo3dprint from "../../../public/icons/3dprint.svg"
 import logonightscout from "../../../public/icons/nightscout.svg"
+import windowsforms from "../../../public/icons/windowsforms.svg"
 export default function ProjectIcon({type}){
 return (
     <>
@@ -13,6 +14,9 @@ return (
             {type === "Arduino" ? <div className="projectIcon"><SiArduino />Arduino</div>: ""}
             {type === "ESP8266" ? <div className="projectIcon"><SiArduino />ESP8266</div>: ""}
             {type === "NightScout" ? <div className="projectIcon"><img src={logonightscout} alt="nightscout" />Nightscout</div>: ""}
+            {type === "C#" ? <div className="projectIcon"><SiSharp />C#</div>: ""}
+            {type === "WindowsForms" ? <div className="projectIcon"><img src={windowsforms} alt="Windows Forms" />Windows Forms</div>: ""}
+
     </>
 )
 }
