@@ -16,7 +16,7 @@ export default function Projectspage() {
       </div>
 
       <div className="projectTab">
-        <h1>Arduino projects</h1>
+        <h1>Other projects</h1>
         <ProjectsMapper type={arduinoArray} className="arduino" />
       </div>
 

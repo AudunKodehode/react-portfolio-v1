@@ -16,7 +16,7 @@ const arduinoArray = [
         languages: ["Arduino", "ESP8266", "API", "NightScout", "3Dprint"],
         description: "Fetch data from Nightscout and display it on 0.96'' OLED display",
         imageUrl: "https://github.com/AudunKodehode/esp8266-0.96-oled-module-base/blob/main/esp8266-0.96-oled-module-nightscout/ESP8266NIGHTSCOUT.jpg?raw=true",
-        localUrl: "/projects/arduino/ssd1306designer.webp"
+        localUrl: "/projects/arduino/esp8266nightscout.webp"
     },
     {
         name: "Adafruit-SSD1306-display-designer",
@@ -25,7 +25,7 @@ const arduinoArray = [
         languages: ["Arduino", "ESP8266", "WindowsForms", "C#"],
         description: "Application to design layout and style on SSD1306 along with Arduino code.",
         imageUrl: "https://github.com/AudunKodehode/esp8266-0.96-oled-module-base/blob/main/esp8266-0.96-oled-module-nightscout/ESP8266NIGHTSCOUT.jpg?raw=true",
-        localUrl: "/projects/arduino/esp8266nightscout.webp"
+        localUrl: "/projects/arduino/ssd1306designer.webp"
     },
 ]
 
