@@ -13,7 +13,7 @@ nav {
 }
 
 .landingPage {
-  background: #b36565;
+  background: #3c3c3c;
 }
 
 .projectsPage {
@@ -112,7 +112,11 @@ nav .contactComponents .contactComponent a:active svg {
 }
 .landingPage .tags {
   display: flex;
-  gap: 15px;
+  width: 580px;
+  overflow-x: hidden;
+}
+.landingPage .tags .tagGroup1, .landingPage .tags .tagGroup2, .landingPage .tags .tagGroup3 {
+  display: flex;
 }
 .landingPage .tags .projectIcon {
   display: flex;
@@ -120,6 +124,8 @@ nav .contactComponents .contactComponent a:active svg {
   align-items: center;
   width: -moz-fit-content;
   width: fit-content;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .landingPage .tags img, .landingPage .tags svg {
   width: 50px;
@@ -217,6 +223,18 @@ nav .contactComponents .contactComponent a:active svg {
   }
   100% {
     opacity: 1;
+  }
+}
+.scrollLeft {
+  animation: scrollLeft 16s linear infinite;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
 @keyframes slideRight {

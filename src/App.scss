@@ -20,7 +20,7 @@ $pallet2e: #1b74c1;
 
 $navBarBackground: #074c88;
 $navBarImage: url();
-$landingBackground: #b36565;
+$landingBackground: #3c3c3c;
 $landingImage: url();
 $projectsBackground: #1f1f1f9b;
 $projectsImage: url();
@@ -31,7 +31,7 @@ $text1: #924c98;
 $text2: #29212a;
 $text3: #000000;
 $text4: #29212a;
-$text5: #000000;
+$text5: #ffffff;
 
 $textAccent: #4b4e6d;
 $textAccent2: #8083a0;
@@ -132,6 +132,8 @@ nav {
     }
   }
 }
+
+
 .landingPage {
   height: calc(150vh - 80px);
   display: flex;
@@ -154,7 +156,6 @@ nav {
       width: 500px;
       display: flex;
       flex-direction: column;
-      
       gap: 20px;
     }
     h1 {
@@ -167,12 +168,18 @@ nav {
 
   .tags{
  display:flex;
- gap: 15px;
+ width: 580px;
+ overflow-x: hidden;
+ .tagGroup1, .tagGroup2, .tagGroup3{
+  display:flex;
+ }
     .projectIcon{
       display:flex;
       flex-direction: column;
       align-items: center;
       width: fit-content;
+      padding-left: 10px;
+      padding-right: 10px;
     }
 
     img, svg {
@@ -278,6 +285,7 @@ nav {
 .slideLeft {
   animation: slideLeft 600ms ease-in-out;
 }
+
 @keyframes fadeIn {
   0% {
     opacity: 0.5;
@@ -286,6 +294,20 @@ nav {
     opacity: 1;
   }
 }
+.scrollLeft{
+  animation: scrollLeft 16s linear infinite;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+  
+}
+
 
 @keyframes slideRight {
   0% {

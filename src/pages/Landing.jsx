@@ -5,7 +5,7 @@ export default function Landingpage() {
     <div className="landingPage">
       <div className="main">
         <div className="imageplaceholder fadeIn"></div>
-        <div className="textplaceholder slideLeft">
+        <div className="textplaceholder ">
           <h1>Mitt navn er Audun Holmen.</h1>
           <h2>Subheader</h2>
           <br></br>
@@ -20,6 +20,7 @@ export default function Landingpage() {
             React.
           </p>
           <div className="tags">
+            <div className="tagGroup1 scrollLeft">
             <ProjectIcon type="HTML" />
             <ProjectIcon type="CSS" />
             <ProjectIcon type="JavaScript" />
@@ -29,6 +30,32 @@ export default function Landingpage() {
             <ProjectIcon type="ESP8266" />
             <ProjectIcon type="C#" />
             <ProjectIcon type="WindowsForms" />
+            </div>
+            <div className="tagGroup2 scrollLeft">
+            <ProjectIcon type="HTML" />
+            <ProjectIcon type="CSS" />
+            <ProjectIcon type="JavaScript" />
+            <ProjectIcon type="React" />
+            <ProjectIcon type="3Dprint" />
+            <ProjectIcon type="Arduino" />
+            <ProjectIcon type="ESP8266" />
+            <ProjectIcon type="C#" />
+            <ProjectIcon type="WindowsForms" />
+            </div>
+
+            {/* <div className="tagGroup3 scrollLeft">
+            <ProjectIcon type="HTML" />
+            <ProjectIcon type="CSS" />
+            <ProjectIcon type="JavaScript" />
+            <ProjectIcon type="React" />
+            <ProjectIcon type="3Dprint" />
+            <ProjectIcon type="Arduino" />
+            <ProjectIcon type="ESP8266" />
+            <ProjectIcon type="C#" />
+            <ProjectIcon type="WindowsForms" />
+            </div> */}
+
+
           </div>
         </div>
       </div>
