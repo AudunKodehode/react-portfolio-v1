@@ -152,14 +152,36 @@ nav {
     }
     .textplaceholder {
       width: 500px;
+      display: flex;
+      flex-direction: column;
+      
+      gap: 20px;
     }
     h1 {
       text-align: left;
     }
     p {
+      font-size: 16px;
+    }
+  }
+
+  .tags{
+ display:flex;
+ gap: 15px;
+    .projectIcon{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      width: fit-content;
+    }
+
+    img, svg {
+      width: 50px;
+      height: 50px;
     }
   }
 }
+
 
 .projectsPage {
   padding-bottom: 50px;

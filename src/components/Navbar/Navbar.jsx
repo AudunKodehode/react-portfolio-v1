@@ -10,16 +10,16 @@ export default function NavBar({pathname}) {
 
       <div className="navItems">
         <Navitem className={` navItem ${pathname === "/" ? "active" : ""}`} to="/">
-          Home
+          Hjem
         </Navitem>
 
         <Navitem className={` navItem ${pathname === "/projects" ? "active" : ""}`} to="/projects">
-          Projects
+          Prosjekter
         </Navitem>
 
         
         <Navitem className={` navItem ${pathname === "/contact" ? "active" : ""}`} to="/contact">
-          Contact
+          Kontakt
         </Navitem>
 
       </div>

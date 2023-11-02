@@ -100,10 +100,32 @@ nav .contactComponents .contactComponent a:active svg {
 }
 .landingPage .main .textplaceholder {
   width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .landingPage .main h1 {
   text-align: left;
 }
+.landingPage .main p {
+  font-size: 16px;
+}
+.landingPage .tags {
+  display: flex;
+  gap: 15px;
+}
+.landingPage .tags .projectIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.landingPage .tags img, .landingPage .tags svg {
+  width: 50px;
+  height: 50px;
+}
+
 .projectsPage {
   padding-bottom: 50px;
   display: flex;

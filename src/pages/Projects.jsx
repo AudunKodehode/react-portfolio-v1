@@ -11,12 +11,12 @@ export default function Projectspage() {
 
       
       <div className="projectTab">
-        <h1>Projects</h1>
+        <h1>Prosjekter</h1>
         <ProjectsMapper type={projectsArray} className="projects" />
       </div>
 
       <div className="projectTab">
-        <h1>Other projects</h1>
+        <h1>Andre prosjekter</h1>
         <ProjectsMapper type={arduinoArray} className="arduino" />
       </div>
 
