@@ -13,20 +13,17 @@ export default function Projectspage() {
       
       <div className="projectTab">
         <h1>Prosjekter</h1>
-        {/* <ProjectsMapper type={projectsArray} className="projects" /> */}
-        <ProjectsMapper2 type={projectsArray} className="projects" />
+        <ProjectsMapper type={projectsArray} className="projects" />
       </div>
 
       <div className="projectTab">
         <h1>Andre prosjekter</h1>
-        {/* <ProjectsMapper type={arduinoArray} className="arduino" /> */}
-        <ProjectsMapper2 type={arduinoArray} className="projects" />
+        <ProjectsMapper type={arduinoArray} className="arduino" />
       </div>
 
       <div className="projectTab">
         <h1>Frontend Mentor challenges</h1>
-        {/* <ProjectsMapper type={frontendmentorArray} className="frontendMentor" /> */}
-        <ProjectsMapper2 type={frontendmentorArray} className="projects" />
+        <ProjectsMapper type={frontendmentorArray} className="frontendMentor" />
       </div>
 
 
