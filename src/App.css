@@ -103,6 +103,8 @@ nav .contactComponents .contactComponent a svg {
 }
 nav .contactComponents .contactComponent a svg:hover {
   fill: #ff0000;
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
 }
 nav .contactComponents .contactComponent a:active {
   text-decoration: none;
