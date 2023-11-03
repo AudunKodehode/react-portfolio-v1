@@ -58,7 +58,19 @@ nav .navItems .active::first-letter {
 }
 nav .contactComponents {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 30px;
+  position: fixed;
+  bottom: 0;
+  background: gray;
+  height: 60px;
+  width: 160px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
 }
 nav .contactComponents .contactComponent a {
   display: flex;
@@ -71,6 +83,9 @@ nav .contactComponents .contactComponent a svg {
   height: 50px;
   color: black;
 }
+nav .contactComponents .contactComponent a svg:hover {
+  fill: rgb(160, 160, 160);
+}
 nav .contactComponents .contactComponent a:active {
   text-decoration: none;
 }
@@ -79,7 +94,7 @@ nav .contactComponents .contactComponent a:active svg {
 }
 
 .landingPage {
-  height: calc(150vh - 80px);
+  height: calc(100vh - 80px);
   display: flex;
   flex-direction: column;
   gap: 5vh;

@@ -24,8 +24,8 @@ export default function NavBar({pathname}) {
 
       </div>
       <div className="contactComponents">
-      <ContactComponent href="https://github.com/audunKodehode" text="Github"><RiGithubFill /></ContactComponent>
-      <ContactComponent href="https://www.linkedin.com/in/audun-holmen-9b595926b/" text="Linkedin"><RiLinkedinBoxLine / ></ContactComponent>
+      <ContactComponent href="https://github.com/audunKodehode" text=""><RiGithubFill /></ContactComponent>
+      <ContactComponent href="https://www.linkedin.com/in/audun-holmen-9b595926b/" text=""><RiLinkedinBoxLine / ></ContactComponent>
       </div>
 
 
