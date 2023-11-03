@@ -1,8 +1,12 @@
+
 import ProjectIcon from "../components/projects/ProjectIcon";
 import Subheader from "../components/Landing/Subheader";
 export default function Landingpage() {
+
   return (
-    <div className="landingPage">
+    
+      <div className="landingPage">
+        
       <div className="main">
         <div className="imageplaceholder fadeIn"></div>
         <div className="textplaceholder ">
@@ -21,32 +25,31 @@ export default function Landingpage() {
           </p>
           <div className="tags">
             <div className="tagGroup1 scrollLeft">
-            <ProjectIcon type="HTML" />
-            <ProjectIcon type="CSS" />
-            <ProjectIcon type="JavaScript" />
-            <ProjectIcon type="React" />
-            <ProjectIcon type="3Dprint" />
-            <ProjectIcon type="Arduino" />
-            <ProjectIcon type="ESP8266" />
-            <ProjectIcon type="C#" />
-            <ProjectIcon type="WindowsForms" />
+              <ProjectIcon type="HTML" />
+              <ProjectIcon type="CSS" />
+              <ProjectIcon type="JavaScript" />
+              <ProjectIcon type="React" />
+              <ProjectIcon type="3Dprint" />
+              <ProjectIcon type="Arduino" />
+              <ProjectIcon type="ESP8266" />
+              <ProjectIcon type="C#" />
+              <ProjectIcon type="WindowsForms" />
             </div>
             <div className="tagGroup2 scrollLeft">
-            <ProjectIcon type="HTML" />
-            <ProjectIcon type="CSS" />
-            <ProjectIcon type="JavaScript" />
-            <ProjectIcon type="React" />
-            <ProjectIcon type="3Dprint" />
-            <ProjectIcon type="Arduino" />
-            <ProjectIcon type="ESP8266" />
-            <ProjectIcon type="C#" />
-            <ProjectIcon type="WindowsForms" />
+              <ProjectIcon type="HTML" />
+              <ProjectIcon type="CSS" />
+              <ProjectIcon type="JavaScript" />
+              <ProjectIcon type="React" />
+              <ProjectIcon type="3Dprint" />
+              <ProjectIcon type="Arduino" />
+              <ProjectIcon type="ESP8266" />
+              <ProjectIcon type="C#" />
+              <ProjectIcon type="WindowsForms" />
             </div>
-
-
           </div>
         </div>
       </div>
+      
     </div>
   );
 }
