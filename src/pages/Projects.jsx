@@ -1,5 +1,4 @@
 import ProjectsMapper from "../components/projects/ProjectsMapper";
-import ProjectsMapper2 from "../components/projects/ProjectsMapper2";
 import {
   projectsArray,
   frontendmentorArray,

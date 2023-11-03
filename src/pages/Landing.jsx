@@ -43,18 +43,6 @@ export default function Landingpage() {
             <ProjectIcon type="WindowsForms" />
             </div>
 
-            {/* <div className="tagGroup3 scrollLeft">
-            <ProjectIcon type="HTML" />
-            <ProjectIcon type="CSS" />
-            <ProjectIcon type="JavaScript" />
-            <ProjectIcon type="React" />
-            <ProjectIcon type="3Dprint" />
-            <ProjectIcon type="Arduino" />
-            <ProjectIcon type="ESP8266" />
-            <ProjectIcon type="C#" />
-            <ProjectIcon type="WindowsForms" />
-            </div> */}
-
 
           </div>
         </div>

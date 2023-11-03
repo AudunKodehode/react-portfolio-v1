@@ -6,7 +6,6 @@ export default function NavBar({pathname}) {
 
   return (
     <nav>
-      <h1>Audun</h1>
 
       <div className="navItems">
         <Navitem className={` navItem ${pathname === "/" ? "active" : ""}`} to="/">
