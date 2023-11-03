@@ -1,5 +1,5 @@
 import ProjectIcon from "../components/projects/ProjectIcon";
-
+import Subheader from "../components/Landing/Subheader";
 export default function Landingpage() {
   return (
     <div className="landingPage">
@@ -7,7 +7,7 @@ export default function Landingpage() {
         <div className="imageplaceholder fadeIn"></div>
         <div className="textplaceholder ">
           <h1>Mitt navn er Audun Holmen.</h1>
-          <h2>Subheader</h2>
+          <Subheader />
           <br></br>
           <p>
             Jeg har i mange år hatt interesse for koding, og har på egen hånd

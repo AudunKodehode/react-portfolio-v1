@@ -1,5 +1,8 @@
 export default function Subheader() {
-  return <>
-  <h3>Subheader</h3>
-  </>;
+  return (
+  <div className="subHeader">
+  <h2>Subheader</h2>
+  <h2>Subheader2</h2>
+  </div>
+  )
 }

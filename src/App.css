@@ -239,6 +239,17 @@ nav .contactComponents .contactComponent a:active svg {
   gap: 20px;
 }
 
+.subHeader {
+  overflow-y: hidden;
+  height: 35px;
+}
+.subHeader h2 {
+  font-size: 30px;
+}
+.subHeader h2::first-letter {
+  color: red;
+}
+
 .fadeIn {
   animation: fadeIn 1s ease-in-out;
 }

@@ -300,7 +300,16 @@ nav {
   flex-direction: column;
   gap: 20px;
 }
-
+.subHeader{
+  overflow-y: hidden;
+  height: 35px;
+  h2{
+    font-size: 30px;
+  }
+  h2::first-letter{
+    color: red;
+  }
+}
 
 
 
