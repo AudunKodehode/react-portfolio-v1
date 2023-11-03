@@ -9,7 +9,7 @@ a {
 }
 
 nav {
-  background: #074c88;
+  background: rgba(7, 76, 136, 0);
 }
 
 .landingPage {
@@ -29,7 +29,10 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 100px;
-  height: 80px;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
 }
 nav h1 {
   color: #924c98;
@@ -38,6 +41,14 @@ nav h1::first-letter {
   color: #4b4e6d;
 }
 nav .navItems {
+  background: #8c8c8c;
+  border-top: 2px solid #ff0000;
+  border-left: 2px solid #ff0000;
+  border-right: 2px solid #ff0000;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  width: 550px;
+  height: 60px;
   display: flex;
   gap: 12px;
   justify-content: center;
@@ -53,24 +64,31 @@ nav .navItems .navItem {
   text-decoration: none;
   font-size: 20px;
 }
+nav .navItems .active {
+  transform: scale(1.2);
+  transform-origin: center;
+}
 nav .navItems .active::first-letter {
-  color: #8083a0;
+  color: #ff0000;
+}
+nav .navItems .navItem:hover::first-letter {
+  color: #ff0000;
 }
 nav .contactComponents {
+  background: #8c8c8c;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 15px;
   position: fixed;
-  bottom: 0;
-  background: gray;
+  top: 0;
   height: 60px;
-  width: 160px;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  border-top: 2px solid white;
-  border-left: 2px solid white;
-  border-right: 2px solid white;
+  width: 230px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom: 2px solid #ff0000;
+  border-left: 2px solid #ff0000;
+  border-right: 2px solid #ff0000;
 }
 nav .contactComponents .contactComponent a {
   display: flex;
@@ -84,7 +102,7 @@ nav .contactComponents .contactComponent a svg {
   color: black;
 }
 nav .contactComponents .contactComponent a svg:hover {
-  fill: rgb(160, 160, 160);
+  fill: #ff0000;
 }
 nav .contactComponents .contactComponent a:active {
   text-decoration: none;
@@ -94,7 +112,7 @@ nav .contactComponents .contactComponent a:active svg {
 }
 
 .landingPage {
-  height: calc(100vh - 80px);
+  height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 5vh;
@@ -104,14 +122,14 @@ nav .contactComponents .contactComponent a:active svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12%;
+  gap: 80px;
 }
 .landingPage .main .imageplaceholder {
   width: 400px;
   height: 400px;
-  background: rgb(28, 90, 28);
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+  background: red;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
 }
 .landingPage .main .textplaceholder {
   width: 500px;
@@ -130,7 +148,7 @@ nav .contactComponents .contactComponent a:active svg {
   width: 580px;
   overflow-x: hidden;
 }
-.landingPage .tags .tagGroup1, .landingPage .tags .tagGroup2, .landingPage .tags .tagGroup3 {
+.landingPage .tags .tagGroup1, .landingPage .tags .tagGroup2 {
   display: flex;
 }
 .landingPage .tags .projectIcon {
@@ -162,6 +180,7 @@ nav .contactComponents .contactComponent a:active svg {
 .projectsPage .projectTab .frontendMentor {
   display: flex;
 }
+
 .projectCard {
   height: 300px;
   display: flex;
@@ -214,10 +233,21 @@ nav .contactComponents .contactComponent a:active svg {
 }
 
 .contactPage {
-  height: calc(100vh - 80px);
+  height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.subHeader {
+  overflow-y: hidden;
+  height: 35px;
+}
+.subHeader h2 {
+  font-size: 30px;
+}
+.subHeader h2::first-letter {
+  color: red;
 }
 
 .fadeIn {
