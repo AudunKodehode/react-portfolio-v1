@@ -119,6 +119,9 @@ nav .contactComponents .contactComponent a:active svg {
   flex-direction: column;
   gap: 5vh;
 }
+.landingPage span {
+  color: red;
+}
 .landingPage .main {
   height: calc(100vh - 80px);
   display: flex;
@@ -137,17 +140,18 @@ nav .contactComponents .contactComponent a:active svg {
   width: 500px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
 }
 .landingPage .main h1 {
   text-align: left;
 }
 .landingPage .main p {
-  font-size: 16px;
+  font-size: 20px;
 }
 .landingPage .tags {
   display: flex;
-  width: 580px;
+  width: 420px;
+  margin-left: 20px;
   overflow-x: hidden;
 }
 .landingPage .tags .tagGroup1, .landingPage .tags .tagGroup2 {

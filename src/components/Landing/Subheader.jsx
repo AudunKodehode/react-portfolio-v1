@@ -1,8 +1,22 @@
-export default function Subheader() {
+import { useState, useEffect } from "react";
+
+export default function Subheader({millis, headerText}) {
+
+  const [headerIndex, setHeaderIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setHeaderIndex((prevIndex) => (prevIndex + 1) % headerText.length);
+    }, millis);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+
   return (
-  <div className="subHeader">
-  <h2>Subheader</h2>
-  <h2>Subheader2</h2>
-  </div>
-  )
+    <div className="subHeader">
+      <h2>{headerText[headerIndex]}</h2>
+    </div>
+  );
 }
