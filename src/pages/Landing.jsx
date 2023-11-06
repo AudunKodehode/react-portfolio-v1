@@ -1,7 +1,6 @@
 import ProjectIcon from "../components/projects/ProjectIcon";
 import Subheader from "../components/Landing/Subheader";
-import { useState } from "react";
-export default function Landingpage({ language }) {
+export default function Landingpage() {
   return (
     <div className="landingPage">
       <div className="main">
@@ -13,13 +12,13 @@ export default function Landingpage({ language }) {
             millis={2000}
             headerText={["Programmerer", "3D-printer", "Kodehode"]}
           />
-          <p>
+          <p className="description">
             Jeg har i mange år hatt interesse for koding, og har lært meg
             diverse kodespråk som C#, C++ og JavaScript for å lage
             dataprogrammer og elektroniske enheter med praktiske formål, og har
             3D-printing, 3D-modellering og programmering av kretskort som hobby.
           </p>
-          <p>
+          <p className="subDescription">
             For tiden fordyper jeg meg i HTML, CSS, JavaScript og rammeverket
             React.
           </p>

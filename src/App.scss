@@ -34,17 +34,17 @@ $text3: #000000;
 $text4: #29212a;
 $text5: #ffffff;
 
-$navTopBottom: #8c8c8c;
-$navTopBottomBorder: #ff0000;
+$navTopBottom: #41ad35;
+$navTopBottomBorder: #000000;
 
 $textAccent: #4b4e6d;
-$textAccent2: #ff0000;
+$textAccent2: rgb(53, 74, 51);
 
 $background1: url("/public/backgrounds/a.svg");
 $background2: url("/public/backgrounds/b.svg");
 
 nav {
-  background: $navBarBackground;
+  // background: $navBarBackground;
   // -----------
   // background-image: $background1;
   // background-position: center;
@@ -52,20 +52,20 @@ nav {
   // background-repeat: no-repeat;
 }
 .landingPage {
-  background: $landingBackground;
+  // background: $landingBackground;
   // -----------
-  // background-image: $background2;
-  // background-position: center;
-  // background-size: cover;
-  // background-repeat: no-repeat;
+  background-image: $background2;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .projectsPage {
-  background: $projectsBackground;
+  // background: $projectsBackground;
   // -----------
-  // background-image: $background2;
-  // background-position: center;
-  // background-size: cover;
-  // background-repeat: no-repeat;
+  background-image: $background2;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .contactPage {
   background: $contactBackground;
@@ -195,6 +195,7 @@ nav {
       background: red;
       border-top-right-radius: 40px;
       border-bottom-left-radius: 40px;
+
     }
     .textplaceholder {
       width: 500px;
@@ -205,8 +206,11 @@ nav {
     h1 {
       text-align: left;
     }
-    p {
+    .description {
       font-size: 20px;
+    }
+    .subDescription{
+      font-size: 18px;
     }
   }
 
@@ -256,8 +260,8 @@ nav {
       font-size: 50px;
       text-align: center;
       padding: 30px;
-      
       margin-top: 40px;
+      text-shadow: white 0px 0px 5px;
     }
     .projects {
       display: flex;
@@ -279,6 +283,7 @@ nav {
   align-items: center;
   border: 1px solid black;
   height: calc(fit-content + 10px );
+  background: rgba(165, 147, 147, 0.695);
   a h2 {
     color: $text3;
     font-size: 30px;
@@ -317,6 +322,7 @@ nav {
         display: flex;
         align-items: center;
         gap: 5px;
+        font-weight: 700;
       }
       .projectIcon svg,
       .projectIcon img {

@@ -8,16 +8,18 @@ a {
   text-decoration: none;
 }
 
-nav {
-  background: rgba(7, 76, 136, 0);
-}
-
 .landingPage {
-  background: #3c3c3c;
+  background-image: url("/public/backgrounds/b.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .projectsPage {
-  background: rgba(31, 31, 31, 0.6078431373);
+  background-image: url("/public/backgrounds/b.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .contactPage {
@@ -42,10 +44,10 @@ nav h1::first-letter {
   color: #4b4e6d;
 }
 nav .navItems {
-  background: #8c8c8c;
-  border-top: 2px solid #ff0000;
-  border-left: 2px solid #ff0000;
-  border-right: 2px solid #ff0000;
+  background: #41ad35;
+  border-top: 2px solid #000000;
+  border-left: 2px solid #000000;
+  border-right: 2px solid #000000;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   width: 550px;
@@ -66,15 +68,15 @@ nav .navItems .navItem {
   font-size: 20px;
 }
 nav .navItems .active::first-letter {
-  color: #ff0000;
+  color: rgb(53, 74, 51);
 }
 nav .navItems .navItem:hover::first-letter {
-  color: #ff0000;
+  color: rgb(53, 74, 51);
 }
 nav .contactComponents {
   box-shadow: #000000 0px 0px 20px;
   z-index: 2;
-  background: #8c8c8c;
+  background: #41ad35;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -85,9 +87,9 @@ nav .contactComponents {
   width: 230px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  border-bottom: 2px solid #ff0000;
-  border-left: 2px solid #ff0000;
-  border-right: 2px solid #ff0000;
+  border-bottom: 2px solid #000000;
+  border-left: 2px solid #000000;
+  border-right: 2px solid #000000;
 }
 nav .contactComponents .contactComponent a {
   display: flex;
@@ -101,7 +103,7 @@ nav .contactComponents .contactComponent a svg {
   color: black;
 }
 nav .contactComponents .contactComponent a svg:hover {
-  fill: #ff0000;
+  fill: rgb(53, 74, 51);
   transform: scale(1.2);
   transition: all 0.5s ease-in-out;
 }
@@ -144,8 +146,11 @@ nav .contactComponents .contactComponent a:active svg {
 .landingPage .main h1 {
   text-align: left;
 }
-.landingPage .main p {
+.landingPage .main .description {
   font-size: 20px;
+}
+.landingPage .main .subDescription {
+  font-size: 18px;
 }
 .landingPage .tags {
   display: flex;
@@ -193,6 +198,7 @@ nav .contactComponents .contactComponent a:active svg {
   text-align: center;
   padding: 30px;
   margin-top: 40px;
+  text-shadow: white 0px 0px 5px;
 }
 .projectsPage .projectTab .projects {
   display: flex;
@@ -214,6 +220,7 @@ nav .contactComponents .contactComponent a:active svg {
   border: 1px solid black;
   height: calc(-moz-fit-content + 10px);
   height: calc(fit-content + 10px);
+  background: rgba(165, 147, 147, 0.695);
 }
 .projectCard a h2 {
   color: #000000;
@@ -254,6 +261,7 @@ nav .contactComponents .contactComponent a:active svg {
   display: flex;
   align-items: center;
   gap: 5px;
+  font-weight: 700;
 }
 .projectCard .imageTags .tags .projectIcon svg,
 .projectCard .imageTags .tags .projectIcon img {
