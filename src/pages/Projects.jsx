@@ -1,15 +1,9 @@
 import ProjectsMapper from "../components/projects/ProjectsMapper";
-import {
-  projectsArray,
-  frontendmentorArray,
-  arduinoArray,
-} from "../components/projects/ProjectsDoc";
+import {  projectsArray,  frontendmentorArray,  arduinoArray,} from "../components/projects/ProjectsDoc";
 
 export default function Projectspage() {
   return (
     <div className="projectsPage">
-
-      
       <div className="projectTab">
         <h1>Prosjekter</h1>
         <ProjectsMapper type={projectsArray} className="projects" />
@@ -24,8 +18,6 @@ export default function Projectspage() {
         <h1>Frontend Mentor challenges</h1>
         <ProjectsMapper type={frontendmentorArray} className="frontendMentor" />
       </div>
-
-
     </div>
   );
 }

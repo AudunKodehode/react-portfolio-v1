@@ -78,6 +78,7 @@ nav {
 
 
 nav {
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,8 +117,6 @@ nav {
       font-size: 20px;
     }
     .active{
-      transform: scale(1.2);
-      transform-origin: center;
     }
     .active::first-letter {
       color: $textAccent2;
@@ -129,6 +128,8 @@ nav {
 
   }
   .contactComponents {
+    box-shadow: #000000 0px 0px 20px;
+    z-index: 2;
     background: $navTopBottom;
     display: flex;
     align-items: center;
@@ -143,7 +144,8 @@ nav {
     border-bottom: 2px solid $navTopBottomBorder; 
     border-left: 2px solid $navTopBottomBorder;
     border-right: 2px solid $navTopBottomBorder;
-    
+
+
     .contactComponent {
       a {
         display: flex;
@@ -198,7 +200,7 @@ nav {
       width: 500px;
       display: flex;
       flex-direction: column;
-      gap: 15px;
+      gap: 20px;
     }
     h1 {
       text-align: left;
@@ -232,14 +234,31 @@ nav {
   }
 }
 
+.projects, .arduino, .frontendMentor{
+  width: 90vw;
+  gap: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .projectCard{
+  border-radius: 15px;
+  box-shadow: #1f1f1f9b 0px 5px 15px;
+  }
+}
 
 .projectsPage {
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-
   .projectTab {
+    h1{
+      font-size: 50px;
+      text-align: center;
+      padding: 30px;
+      
+      margin-top: 40px;
+    }
     .projects {
       display: flex;
     }
@@ -248,17 +267,22 @@ nav {
     }
     .frontendMentor {
       display: flex;
+      margin-bottom: 40px;
     }
   }
 }
 .projectCard {
-  height: 300px;
+  width:  350px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   border: 1px solid black;
+  height: calc(fit-content + 10px );
   a h2 {
     color: $text3;
+    font-size: 30px;
+    text-align: center;
   }
   .description {
     color: $text4;
@@ -283,6 +307,7 @@ nav {
     gap: 10px;
     align-items: center;
     padding: 10px;
+    
     .tags {
       display: flex;
       flex-direction: column;
@@ -374,5 +399,12 @@ nav {
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 630px) {
+  div.navItems{
+    width: 100%;
+    border-radius: 0;
   }
 }

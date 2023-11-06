@@ -8,7 +8,6 @@ export default function Subheader({millis, headerText}) {
     const timer = setInterval(() => {
       setHeaderIndex((prevIndex) => (prevIndex + 1) % headerText.length);
     }, millis);
-
     return () => {
       clearInterval(timer);
     };

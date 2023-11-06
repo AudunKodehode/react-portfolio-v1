@@ -3,10 +3,12 @@ import ProjectIcon from "./ProjectIcon";
 export default function ProjectsMapper({ type, className }) {
   const selectedArray = type;
   return (
+    
+      
     <div className={className}>
       {selectedArray.map((project, index) => (
         <div className="projectCard" key={index}>
-          <a href={project.repository}>
+          <a target="_blank" href={project.repository}>
             <h2 className="name">{project.name}</h2>
           </a>
           <p className="description">{project.description}</p>
@@ -32,4 +34,6 @@ export default function ProjectsMapper({ type, className }) {
       ))}
     </div>
   );
+
 }
+

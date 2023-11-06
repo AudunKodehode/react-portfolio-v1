@@ -1,22 +1,21 @@
-
 import ProjectIcon from "../components/projects/ProjectIcon";
 import Subheader from "../components/Landing/Subheader";
-export default function Landingpage() {
-
+import { useState } from "react";
+export default function Landingpage({ language }) {
   return (
-    
-      <div className="landingPage">
-        
+    <div className="landingPage">
       <div className="main">
         <div className="imageplaceholder fadeIn"></div>
         <div className="textplaceholder ">
-          <h1>Mitt navn er <span>A</span>udun <span>H</span>olmen.</h1>
-          <Subheader millis={2000} 
-          headerText={["Programmerer", "3D-printer", "Kodehode", "Nerd"]}
+            <h1>Mitt navn er Audun Holmen.</h1>
+
+          <Subheader
+            millis={2000}
+            headerText={["Programmerer", "3D-printer", "Kodehode"]}
           />
-          <br></br>
           <p>
-            Jeg har i mange år hatt interesse for koding, og har lært meg diverse kodespråk som C#, C++ og JavaScript for å lage
+            Jeg har i mange år hatt interesse for koding, og har lært meg
+            diverse kodespråk som C#, C++ og JavaScript for å lage
             dataprogrammer og elektroniske enheter med praktiske formål, og har
             3D-printing, 3D-modellering og programmering av kretskort som hobby.
           </p>
@@ -50,7 +49,6 @@ export default function Landingpage() {
           </div>
         </div>
       </div>
-      
     </div>
   );
 }

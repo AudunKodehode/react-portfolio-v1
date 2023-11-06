@@ -25,6 +25,7 @@ nav {
 }
 
 nav {
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,10 +65,6 @@ nav .navItems .navItem {
   text-decoration: none;
   font-size: 20px;
 }
-nav .navItems .active {
-  transform: scale(1.2);
-  transform-origin: center;
-}
 nav .navItems .active::first-letter {
   color: #ff0000;
 }
@@ -75,6 +72,8 @@ nav .navItems .navItem:hover::first-letter {
   color: #ff0000;
 }
 nav .contactComponents {
+  box-shadow: #000000 0px 0px 20px;
+  z-index: 2;
   background: #8c8c8c;
   display: flex;
   align-items: center;
@@ -140,7 +139,7 @@ nav .contactComponents .contactComponent a:active svg {
   width: 500px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 .landingPage .main h1 {
   text-align: left;
@@ -171,11 +170,29 @@ nav .contactComponents .contactComponent a:active svg {
   height: 50px;
 }
 
+.projects, .arduino, .frontendMentor {
+  width: 90vw;
+  gap: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.projects .projectCard, .arduino .projectCard, .frontendMentor .projectCard {
+  border-radius: 15px;
+  box-shadow: rgba(31, 31, 31, 0.6078431373) 0px 5px 15px;
+}
+
 .projectsPage {
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.projectsPage .projectTab h1 {
+  font-size: 50px;
+  text-align: center;
+  padding: 30px;
+  margin-top: 40px;
 }
 .projectsPage .projectTab .projects {
   display: flex;
@@ -185,17 +202,23 @@ nav .contactComponents .contactComponent a:active svg {
 }
 .projectsPage .projectTab .frontendMentor {
   display: flex;
+  margin-bottom: 40px;
 }
 
 .projectCard {
-  height: 300px;
+  width: 350px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   border: 1px solid black;
+  height: calc(-moz-fit-content + 10px);
+  height: calc(fit-content + 10px);
 }
 .projectCard a h2 {
   color: #000000;
+  font-size: 30px;
+  text-align: center;
 }
 .projectCard .description {
   color: #29212a;
@@ -302,5 +325,11 @@ nav .contactComponents .contactComponent a:active svg {
   }
   100% {
     transform: translateX(0);
+  }
+}
+@media screen and (max-width: 630px) {
+  div.navItems {
+    width: 100%;
+    border-radius: 0;
   }
 }/*# sourceMappingURL=App.css.map */
