@@ -313,6 +313,25 @@ nav .contactComponents .contactComponent a:active svg {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.contactPage .contact {
+  background: rgba(39, 114, 151, 0.6705882353);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: #000000 0px 0px 20px;
+}
+.contactPage .contact h2 {
+  font-size: 32px;
+}
+.contactPage .contact h3 {
+  font-size: 24px;
+}
+.contactPage .contact h4 {
+  font-size: 18px;
 }
 
 .subHeader {

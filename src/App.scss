@@ -366,6 +366,25 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: center;
+  justify-content: center;
+  .contact{
+    background: #277297ab;
+    padding: 40px;
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: #000000 0px 0px 20px;
+    h2{
+      font-size: 32px;
+    }
+    h3{
+      font-size: 24px;
+    }
+    h4{
+      font-size: 18px;
+    }
+  }
 }
 .subHeader{
   overflow-y: hidden;
