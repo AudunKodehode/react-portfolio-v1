@@ -34,23 +34,18 @@ $text3: #000000;
 $text4: #29212a;
 $text5: #ffffff;
 
-$navTopBottom: #41ad35;
-$navTopBottomBorder: #000000;
+$navTopBottom: #297ea6;
+$navTopBottomBorder: #a5b8c5;
 
 $textAccent: #4b4e6d;
-$textAccent2: rgb(53, 74, 51);
+$textAccent2: rgb(51, 54, 74);
+$textAccent3: rgb(123, 123, 156);
+$textAccent4: rgb(0, 0, 0);
 
 $background1: url("/public/backgrounds/a.svg");
 $background2: url("/public/backgrounds/b.svg");
 
-nav {
-  // background: $navBarBackground;
-  // -----------
-  // background-image: $background1;
-  // background-position: center;
-  // background-size: cover;
-  // background-repeat: no-repeat;
-}
+
 .landingPage {
   // background: $landingBackground;
   // -----------
@@ -68,12 +63,12 @@ nav {
   background-repeat: no-repeat;
 }
 .contactPage {
-  background: $contactBackground;
+  // background: $contactBackground;
   // -----------
-  // background-image: $background1;
-  // background-position: center;
-  // background-size: cover;
-  // background-repeat: no-repeat;
+  background-image: $background2;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
@@ -116,16 +111,31 @@ nav {
       text-decoration: none;
       font-size: 20px;
     }
-    .active{
-    }
     .active::first-letter {
-      color: $textAccent2;
+      color: $textAccent4;
     }
     .navItem:hover::first-letter {
       color: $textAccent2;
     }
 
 
+  }
+  .languageSwitcher{
+    position: fixed;
+    margin: 20px;
+    top:0;
+    right: 0;
+    transition: all 0.5s ease-in-out;
+    opacity: 0.5;
+    .languageIcon {
+      width: 40px;
+      height: 40px;
+      border-radius: 55px;
+    }
+  }
+  .languageSwitcher:hover{
+    cursor: pointer;
+    opacity: 1;
   }
   .contactComponents {
     box-shadow: #000000 0px 0px 20px;
@@ -160,8 +170,8 @@ nav {
 
         svg:hover{
           fill: $textAccent2;
-          transform: scale(1.2);
-          transition: all 0.5s ease-in-out;
+          transform: scale(1.1);
+          transition: all 0.1s ease-in-out;
         }
       }
       a:active {
@@ -191,10 +201,11 @@ nav {
     gap: 80px;
     .imageplaceholder {
       width: 400px;
-      height: 400px;
+      height: 478px;
       background: red;
       border-top-right-radius: 40px;
       border-bottom-left-radius: 40px;
+      box-shadow: #000000 0px 0px 20px;
 
     }
     .textplaceholder {
@@ -202,23 +213,38 @@ nav {
       display: flex;
       flex-direction: column;
       gap: 20px;
-      background: rgb(71, 63, 63);
+      background: #277297ab;
+      border-bottom-right-radius: 40px;
+      border-top-left-radius: 40px;
+      box-shadow: #000000 0px 0px 20px;
+      padding-top: 20px;
+      padding-bottom: 30px;
+    }
+    .subHeader{
+      margin-top: 8px;
+      padding-left: 30px;
+      padding-right: 20px;
     }
     h1 {
+      font-size: 36px;
       text-align: left;
+      padding-left: 20px;
+      padding-right: 12px;
     }
     .description {
       font-size: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
     .subDescription{
       font-size: 18px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
-
   .tags{
  display:flex;
- width: 420px;
- margin-left: 20px;
+ width: 100%;
  overflow-x: hidden;
  .tagGroup1, .tagGroup2{
   display:flex;
@@ -269,10 +295,10 @@ nav {
     }
     .arduino {
       display: flex;
+      margin-bottom: 40px;
     }
     .frontendMentor {
       display: flex;
-      margin-bottom: 40px;
     }
   }
 }
@@ -289,6 +315,7 @@ nav {
     color: $text3;
     font-size: 30px;
     text-align: center;
+    padding-top: 8px;
   }
   .description {
     color: $text4;
@@ -347,7 +374,7 @@ nav {
     font-size: 30px;
   }
   h2::first-letter{
-    color: red;
+    color: $textAccent3;
   }
 }
 
@@ -369,6 +396,20 @@ nav {
   animation: slideLeft 600ms ease-in-out;
 }
 
+@keyframes fadeOut{
+  0% {
+    opacity: 1;
+  }
+  30%{
+opacity: 1;
+  }
+  100%{
+opacity: 0.5;
+  }
+}
+.fadeOut{
+  animation: fadeOut 2s ease-in-out;
+}
 @keyframes fadeIn {
   0% {
     opacity: 0.5;
@@ -412,6 +453,12 @@ nav {
 @media screen and (max-width: 630px) {
   div.navItems{
     width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    border: none;
+
     border-radius: 0;
   }
 }
