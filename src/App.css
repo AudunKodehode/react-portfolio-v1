@@ -142,6 +142,7 @@ nav .contactComponents .contactComponent a:active svg {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  background: rgb(71, 63, 63);
 }
 .landingPage .main h1 {
   text-align: left;
