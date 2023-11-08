@@ -518,13 +518,15 @@ nav {
   }
 }
 @media screen and (max-width: 450px) {
-  .projectCard {
-    width: 100%;
-  }
- .contactForm * {
+  form * {
+    max-width: 100%;
     width: 100%;
     min-width: none;
   }
+  .projectCard {
+    width: 100%;
+  }
+
 }
 @media screen and (max-width: 410px) {
   .languageSwitcher {
