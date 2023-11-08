@@ -1,5 +1,6 @@
 import Navitem from "./Navitem";
 import ContactComponent from "../Contact/ContactComponent";
+import resume from "/icons/resume.svg"
 import {
   RiLinkedinBoxLine,
   RiGithubFill,
@@ -73,6 +74,9 @@ export default function NavBar({ pathname, language, setLanguage }) {
         </ContactComponent>
         <ContactComponent href="mailto:audunkodehode@gmail.com" text="">
           <RiMailSendLine />
+        </ContactComponent>
+        <ContactComponent href="https://1drv.ms/w/s!An9h-T5F7-V5k6Fc9LpKnNzxnT6jXA?e=NAkA3d">
+          <img className="test" src={resume} alt="resume" />
         </ContactComponent>
       </div>
     </nav>

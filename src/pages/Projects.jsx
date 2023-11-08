@@ -2,6 +2,7 @@ import ProjectsMapper from "../components/projects/ProjectsMapper";
 import {  projectsArray,  frontendmentorArray,  arduinoArray,} from "../components/projects/ProjectsDoc";
 
 export default function Projectspage({language}) {
+  {language === "no" ? document.title = "Prosjekter - Audun Holmen": (document.title = "Projects - Audun Holmen")}
   return (
     <div className="projectsPage">
       <div className="projectTab">

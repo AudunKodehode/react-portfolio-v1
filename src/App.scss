@@ -148,7 +148,7 @@ nav {
     position: fixed;
     top: 0;
     height: 60px;
-    width: 230px;
+    width: 280px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     border-bottom: 2px solid $navTopBottomBorder; 
@@ -167,7 +167,16 @@ nav {
           height: 50px;
           color: black;
         }
-
+        img {
+          width: 50px;
+          height: 40px;
+          color: black;
+        }
+        img:hover{
+          fill: $textAccent2;
+          transform: scale(1.1);
+          transition: all 0.1s ease-in-out;
+        }
         svg:hover{
           fill: $textAccent2;
           transform: scale(1.1);
@@ -202,23 +211,32 @@ nav {
     .imageplaceholder {
       width: 400px;
       height: 478px;
-      background: red;
+      background: #2f43a6;
+      opacity:0.8;
+      transition: all 0.5s;
       border-top-right-radius: 40px;
       border-bottom-left-radius: 40px;
       box-shadow: #000000 0px 0px 20px;
-
+    }
+    .imageplaceholder:hover{
+      opacity:1;
     }
     .textplaceholder {
       width: 500px;
       display: flex;
       flex-direction: column;
       gap: 20px;
-      background: #277297ab;
+      background: #2f43a6;
+      opacity:0.8;
+      transition: all 0.5s;
       border-bottom-right-radius: 40px;
       border-top-left-radius: 40px;
       box-shadow: #000000 0px 0px 20px;
       padding-top: 20px;
       padding-bottom: 30px;
+    }
+    .textplaceholder:hover{
+      opacity:1;
     }
     .subHeader{
       margin-top: 8px;
@@ -271,10 +289,6 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  .projectCard{
-  border-radius: 15px;
-  box-shadow: #1f1f1f9b 0px 5px 15px;
-  }
 }
 
 .projectsPage {
@@ -288,7 +302,7 @@ nav {
       text-align: center;
       padding: 30px;
       margin-top: 40px;
-      text-shadow: white 0px 0px 5px;
+      text-shadow: #1d6474 0px 0px 5px;
     }
     .projects {
       display: flex;
@@ -302,6 +316,9 @@ nav {
     }
   }
 }
+.projectCard:hover{
+  opacity:1;
+}
 .projectCard {
   width:  350px;
   display: flex;
@@ -310,7 +327,11 @@ nav {
   align-items: center;
   border: 1px solid black;
   height: calc(fit-content + 10px );
-  background: rgba(165, 147, 147, 0.695);
+  border-radius: 15px;
+  box-shadow: #1f1f1f9b 0px 5px 15px;
+  background: #4e557a;
+  opacity:0.8;
+  transition: all 1s;
   a h2 {
     color: $text3;
     font-size: 30px;
@@ -368,13 +389,14 @@ nav {
   gap: 20px;
   align-items: center;
   justify-content: center;
-  .contact{
+  .businessCard{
     background: #277297ab;
     padding: 40px;
     display:flex;
     flex-direction: column;
     gap: 10px;
     box-shadow: #000000 0px 0px 20px;
+    border-radius: 5px;
     h2{
       font-size: 32px;
     }
