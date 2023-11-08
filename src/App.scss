@@ -45,7 +45,6 @@ $textAccent4: rgb(0, 0, 0);
 $background1: url("/public/backgrounds/a.svg");
 $background2: url("/public/backgrounds/b.svg");
 
-
 .landingPage {
   // background: $landingBackground;
   // -----------
@@ -71,7 +70,6 @@ $background2: url("/public/backgrounds/b.svg");
   background-repeat: no-repeat;
 }
 
-
 nav {
   z-index: 2;
   display: flex;
@@ -90,7 +88,7 @@ nav {
   }
   .navItems {
     background: $navTopBottom;
-    border-top: 2px solid $navTopBottomBorder; 
+    border-top: 2px solid $navTopBottomBorder;
     border-left: 2px solid $navTopBottomBorder;
     border-right: 2px solid $navTopBottomBorder;
     border-top-left-radius: 30px;
@@ -117,13 +115,11 @@ nav {
     .navItem:hover::first-letter {
       color: white;
     }
-
-
   }
-  .languageSwitcher{
+  .languageSwitcher {
     position: fixed;
     margin: 20px;
-    top:0;
+    top: 0;
     right: 0;
     transition: all 0.5s ease-in-out;
     opacity: 0.5;
@@ -133,7 +129,7 @@ nav {
       border-radius: 55px;
     }
   }
-  .languageSwitcher:hover{
+  .languageSwitcher:hover {
     cursor: pointer;
     opacity: 1;
   }
@@ -151,10 +147,9 @@ nav {
     width: 280px;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    border-bottom: 2px solid $navTopBottomBorder; 
+    border-bottom: 2px solid $navTopBottomBorder;
     border-left: 2px solid $navTopBottomBorder;
     border-right: 2px solid $navTopBottomBorder;
-
 
     .contactComponent {
       a {
@@ -172,12 +167,12 @@ nav {
           height: 40px;
           color: black;
         }
-        img:hover{
+        img:hover {
           fill: $textAccent2;
           transform: scale(1.1);
           transition: all 0.1s ease-in-out;
         }
-        svg:hover{
+        svg:hover {
           fill: $textAccent2;
           transform: scale(1.1);
           transition: all 0.1s ease-in-out;
@@ -193,9 +188,8 @@ nav {
   }
 }
 
-
 .landingPage {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 5vh;
@@ -209,63 +203,65 @@ nav {
       width: 400px;
       height: 478px;
       background: #4e557a;
-      opacity:0.8;
+      opacity: 0.8;
       transition: all 0.5s;
       border-top-right-radius: 40px;
       border-bottom-left-radius: 40px;
       box-shadow: #000000 0px 0px 20px;
     }
-    .imageplaceholder:hover{
-      opacity:1;
+    .imageplaceholder:hover {
+      opacity: 1;
     }
-    .textplaceholder {
+    .mainText {
       width: 500px;
       display: flex;
       flex-direction: column;
       gap: 20px;
       background: #4e557a;
-      opacity:0.8;
+      opacity: 0.8;
       transition: all 0.5s;
       border-bottom-right-radius: 40px;
       border-top-left-radius: 40px;
       box-shadow: #000000 0px 0px 20px;
-      padding-top: 20px;
       padding-bottom: 30px;
     }
-    .textplaceholder:hover{
-      opacity:1;
+    .textplaceholder:hover {
+      opacity: 1;
     }
-    .subHeader{
+    .subHeader {
       margin-top: 8px;
-      padding-left: 30px;
+      padding-left: 40px;
       padding-right: 20px;
+      font-size: 20px;
     }
     h1 {
       font-size: 36px;
       text-align: left;
-      padding-left: 20px;
+      padding-left: 30px;
       padding-right: 12px;
+      margin-top: 40px;
     }
     .description {
       font-size: 20px;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 40px;
+      padding-right: 30px;
     }
-    .subDescription{
+    .subDescription {
       font-size: 18px;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 40px;
+      padding-right: 30px;
     }
   }
-  .tags{
- display:flex;
- width: 100%;
- overflow-x: hidden;
- .tagGroup1, .tagGroup2{
-  display:flex;
- }
-    .projectIcon{
-      display:flex;
+  .tags {
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+    .tagGroup1,
+    .tagGroup2 {
+      display: flex;
+    }
+    .projectIcon {
+      display: flex;
       flex-direction: column;
       align-items: center;
       width: fit-content;
@@ -273,14 +269,17 @@ nav {
       padding-right: 10px;
     }
 
-    img, svg {
+    img,
+    svg {
       width: 50px;
       height: 50px;
     }
   }
 }
 
-.projects, .arduino, .frontendMentor{
+.projects,
+.arduino,
+.frontendMentor {
   width: 90vw;
   gap: 15px;
   display: flex;
@@ -293,8 +292,13 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   .projectTab {
-    h1{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1 {
       font-size: 50px;
       text-align: center;
       padding: 30px;
@@ -307,27 +311,31 @@ nav {
     .arduino {
       display: flex;
       margin-bottom: 40px;
+      align-items: center;
+      justify-content: center;
     }
     .frontendMentor {
       display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 }
-.projectCard:hover{
-  opacity:1;
+.projectCard:hover {
+  opacity: 1;
 }
 .projectCard {
-  width:  350px;
+  width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border: 1px solid black;
-  height: calc(fit-content + 10px );
+  height: calc(fit-content + 10px);
   border-radius: 15px;
   box-shadow: #1f1f1f9b 0px 5px 15px;
   background: #4e557a;
-  opacity:0.8;
+  opacity: 0.8;
   transition: all 1s;
   a h2 {
     color: $text3;
@@ -358,7 +366,7 @@ nav {
     gap: 10px;
     align-items: center;
     padding: 10px;
-    
+
     .tags {
       display: flex;
       flex-direction: column;
@@ -385,12 +393,12 @@ nav {
   gap: 20px;
   align-items: center;
   justify-content: center;
-  .contactForm{
-    display:flex;
+  .contactForm {
+    display: flex;
     flex-direction: column;
     width: 400px;
     gap: 5px;
-    .messageInput{
+    .messageInput {
       max-width: 400px;
       min-width: 400px;
 
@@ -399,44 +407,27 @@ nav {
       height: 80px;
     }
   }
-  .businessCard{
+  .businessCard {
     background: #277297ab;
-    padding: 40px;
-    display:flex;
+    padding: 24px;
+    display: flex;
     flex-direction: column;
     gap: 10px;
     box-shadow: #000000 0px 0px 20px;
     border-radius: 5px;
-    h2{
+    h2 {
       font-size: 32px;
     }
-    h3{
+    h3 {
       font-size: 24px;
     }
-    h4{
+    h4 {
       font-size: 18px;
     }
   }
 }
-.subHeader{
-  overflow-y: hidden;
-  height: 35px;
-  h2{
-    font-size: 30px;
-  }
-  h2::first-letter{
-    color: $textAccent3;
-  }
-}
 
-
-
-
-
-
-
-
-.fadeIn{
+.fadeIn {
   animation: fadeIn 1s ease-in-out;
 }
 
@@ -447,29 +438,29 @@ nav {
   animation: slideLeft 600ms ease-in-out;
 }
 
-@keyframes fadeOut{
+@keyframes fadeOut {
   0% {
     opacity: 1;
   }
-  30%{
-opacity: 1;
+  30% {
+    opacity: 1;
   }
-  100%{
-opacity: 0.5;
+  100% {
+    opacity: 0.7;
   }
 }
-.fadeOut{
+.fadeOut {
   animation: fadeOut 2s ease-in-out;
 }
 @keyframes fadeIn {
   0% {
-    opacity: 0.5;
+    opacity: 0.7;
   }
   100% {
     opacity: 1;
   }
 }
-.scrollLeft{
+.scrollLeft {
   animation: scrollLeft 16s linear infinite;
 }
 
@@ -480,9 +471,7 @@ opacity: 0.5;
   100% {
     transform: translateX(-100%);
   }
-  
 }
-
 
 @keyframes slideRight {
   0% {
@@ -500,36 +489,74 @@ opacity: 0.5;
     transform: translateX(0);
   }
 }
-
+@media screen and (max-width: 990px) {
+  #root > div > div > div.mainText{
+    margin-top: 120px;
+  }
+  #root > div > div > div.imageplaceholder.fadeIn{
+    display:none;
+  }
+}
+@media screen and (max-width: 770px) {
+  .contactPage {
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 630px) {
-  div.navItems{
+  #root > div > div > div.mainText{
+    width: 100%;
+    border-radius: 0;
+  }
+  div.navItems {
     width: 100%;
     position: fixed;
     bottom: 0;
     left: 0;
     height: 40px;
     border: none;
-
     border-radius: 0;
   }
 }
+@media screen and (max-width: 450px) {
+  .projectCard {
+    width: 100%;
+  }
+ .contactForm * {
+    width: 100%;
+    min-width: none;
+  }
+}
+@media screen and (max-width: 410px) {
+  .languageSwitcher {
+    transform: translateY(50px);
+  }
 
-
-.contactFormInput {
-  font-family: 'Segoe UI', sans-serif;
+}
+@media screen and (max-width: 350px) {
+  .projectCard {
+    img,
+    .imagewrapper {
+      width: 140px;
+      height: 140px;
+    }
+  }
 }
 
-.contactFormInput  {
+.contactFormInput {
+  font-family: "Segoe UI", sans-serif;
+}
+
+.contactFormInput {
   font-size: 100%;
   padding: 0.8em;
   outline: none;
   border: 2px solid #15384f;
   background-color: #112e42;
   border-radius: 20px;
-  color:white;
+  color: white;
 }
 
-label{
+.contactForm p {
   font-size: 16px;
   font-weight: 600;
   color: white;
@@ -537,14 +564,14 @@ label{
   margin-left: 10px;
   margin-top: 5px;
 }
-.submitButton{
+.submitButton {
   border: 2px solid #15384f;
   background-color: #112e42;
   border-radius: 20px;
   font-size: 16px;
   font-weight: 300;
   color: white;
-  padding: 5px;
+  padding: 10px;
   align-self: center;
   width: fit-content;
 }

@@ -51,30 +51,33 @@ const ContactForm = ({ language }) => {
     <>
       <form action={FORM_ENDPOINT} onSubmit={handleSubmit} method="POST">
         <div className="contactForm">
-            <label htmlFor="name">{language === "no" ? "Navn" : "Name"}</label>
+            <p>{language === "no" ? "Navn" : "Name"}</p>
           <input
             type="text"
             placeholder={language === "no" ? "Navn" : "Name"}
             name="name"
             className="contactFormInput"
+            autoComplete="name"
             required
           />
-          <label htmlFor="name">{language === "no" ? "Epost" : "Email"}</label>
+          <p>{language === "no" ? "Epost" : "Email"}</p>
           <input
             type="email"
             placeholder={language === "no" ? "Epost" : "Email"}
             name="email"
             className="contactFormInput"
+            autoComplete="email"
             required
           />
-          <label htmlFor="name">{language === "no" ? "Telefon" : "Phone"}</label>
+          <p>{language === "no" ? "Telefonnummer" : "Phone number"}</p>
           <input
             type="phone"
-            placeholder={language === "no" ? "Telefon" : "Phone"}
+            placeholder={language === "no" ? "Telefonnummer" : "Phone number"}
             name="phone"
+            autoComplete="phone"
             className="contactFormInput"
           />
-          <label htmlFor="name">{language === "no" ? "Din melding" : "Your message"}</label>
+          <p>{language === "no" ? "Din melding" : "Your message"}</p>
           <textarea
             placeholder={language === "no" ? "Din melding" : "Your message"}
             name="message"

@@ -145,7 +145,7 @@ nav .contactComponents .contactComponent a:active svg {
 }
 
 .landingPage {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   gap: 5vh;
@@ -170,7 +170,7 @@ nav .contactComponents .contactComponent a:active svg {
 .landingPage .main .imageplaceholder:hover {
   opacity: 1;
 }
-.landingPage .main .textplaceholder {
+.landingPage .main .mainText {
   width: 500px;
   display: flex;
   flex-direction: column;
@@ -181,7 +181,6 @@ nav .contactComponents .contactComponent a:active svg {
   border-bottom-right-radius: 40px;
   border-top-left-radius: 40px;
   box-shadow: #000000 0px 0px 20px;
-  padding-top: 20px;
   padding-bottom: 30px;
 }
 .landingPage .main .textplaceholder:hover {
@@ -189,31 +188,34 @@ nav .contactComponents .contactComponent a:active svg {
 }
 .landingPage .main .subHeader {
   margin-top: 8px;
-  padding-left: 30px;
+  padding-left: 40px;
   padding-right: 20px;
+  font-size: 20px;
 }
 .landingPage .main h1 {
   font-size: 36px;
   text-align: left;
-  padding-left: 20px;
+  padding-left: 30px;
   padding-right: 12px;
+  margin-top: 40px;
 }
 .landingPage .main .description {
   font-size: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 40px;
+  padding-right: 30px;
 }
 .landingPage .main .subDescription {
   font-size: 18px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 40px;
+  padding-right: 30px;
 }
 .landingPage .tags {
   display: flex;
   width: 100%;
   overflow-x: hidden;
 }
-.landingPage .tags .tagGroup1, .landingPage .tags .tagGroup2 {
+.landingPage .tags .tagGroup1,
+.landingPage .tags .tagGroup2 {
   display: flex;
 }
 .landingPage .tags .projectIcon {
@@ -225,12 +227,15 @@ nav .contactComponents .contactComponent a:active svg {
   padding-left: 10px;
   padding-right: 10px;
 }
-.landingPage .tags img, .landingPage .tags svg {
+.landingPage .tags img,
+.landingPage .tags svg {
   width: 50px;
   height: 50px;
 }
 
-.projects, .arduino, .frontendMentor {
+.projects,
+.arduino,
+.frontendMentor {
   width: 90vw;
   gap: 15px;
   display: flex;
@@ -243,6 +248,13 @@ nav .contactComponents .contactComponent a:active svg {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+.projectsPage .projectTab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .projectsPage .projectTab h1 {
   font-size: 50px;
@@ -257,9 +269,13 @@ nav .contactComponents .contactComponent a:active svg {
 .projectsPage .projectTab .arduino {
   display: flex;
   margin-bottom: 40px;
+  align-items: center;
+  justify-content: center;
 }
 .projectsPage .projectTab .frontendMentor {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .projectCard:hover {
@@ -351,7 +367,7 @@ nav .contactComponents .contactComponent a:active svg {
 }
 .contactPage .businessCard {
   background: rgba(39, 114, 151, 0.6705882353);
-  padding: 40px;
+  padding: 24px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -366,17 +382,6 @@ nav .contactComponents .contactComponent a:active svg {
 }
 .contactPage .businessCard h4 {
   font-size: 18px;
-}
-
-.subHeader {
-  overflow-y: hidden;
-  height: 35px;
-}
-.subHeader h2 {
-  font-size: 30px;
-}
-.subHeader h2::first-letter {
-  color: rgb(123, 123, 156);
 }
 
 .fadeIn {
@@ -399,7 +404,7 @@ nav .contactComponents .contactComponent a:active svg {
     opacity: 1;
   }
   100% {
-    opacity: 0.5;
+    opacity: 0.7;
   }
 }
 .fadeOut {
@@ -408,7 +413,7 @@ nav .contactComponents .contactComponent a:active svg {
 
 @keyframes fadeIn {
   0% {
-    opacity: 0.5;
+    opacity: 0.7;
   }
   100% {
     opacity: 1;
@@ -442,7 +447,24 @@ nav .contactComponents .contactComponent a:active svg {
     transform: translateX(0);
   }
 }
+@media screen and (max-width: 990px) {
+  #root > div > div > div.mainText {
+    margin-top: 120px;
+  }
+  #root > div > div > div.imageplaceholder.fadeIn {
+    display: none;
+  }
+}
+@media screen and (max-width: 770px) {
+  .contactPage {
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 630px) {
+  #root > div > div > div.mainText {
+    width: 100%;
+    border-radius: 0;
+  }
   div.navItems {
     width: 100%;
     position: fixed;
@@ -451,6 +473,27 @@ nav .contactComponents .contactComponent a:active svg {
     height: 40px;
     border: none;
     border-radius: 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .projectCard {
+    width: 100%;
+  }
+  .contactForm * {
+    width: 100%;
+    min-width: none;
+  }
+}
+@media screen and (max-width: 410px) {
+  .languageSwitcher {
+    transform: translateY(50px);
+  }
+}
+@media screen and (max-width: 350px) {
+  .projectCard img,
+  .projectCard .imagewrapper {
+    width: 140px;
+    height: 140px;
   }
 }
 .contactFormInput {
@@ -467,7 +510,7 @@ nav .contactComponents .contactComponent a:active svg {
   color: white;
 }
 
-label {
+.contactForm p {
   font-size: 16px;
   font-weight: 600;
   color: white;
@@ -483,7 +526,7 @@ label {
   font-size: 16px;
   font-weight: 300;
   color: white;
-  padding: 5px;
+  padding: 10px;
   align-self: center;
   width: -moz-fit-content;
   width: fit-content;

@@ -5,10 +5,10 @@ export default function Landingpage({ language }) {
     <div className="landingPage">
       <div className="main">
         <div className="imageplaceholder fadeIn"></div>
-        <div className="textplaceholder ">
+        <div className="mainText ">
           {language === "no" ? (
             <>
-              <h1>Mitt navn er Audun Holmen.</h1>
+              <h1>Mitt navn er Audun Holmen</h1>
 
               <Subheader
                 millis={2000}
@@ -28,7 +28,7 @@ export default function Landingpage({ language }) {
             </>
           ) : (
             <>
-              <h1>My name is Audun Holmen.</h1>
+              <h1>My name is Audun Holmen</h1>
               <Subheader
                 millis={2000}
                 headerText={["Programmer", "Coder", "3D-printer"]}
