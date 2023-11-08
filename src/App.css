@@ -53,7 +53,7 @@ nav .navItems {
   border-right: 2px solid #a5b8c5;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
-  width: 550px;
+  width: 450px;
   height: 60px;
   display: flex;
   gap: 12px;
@@ -71,10 +71,10 @@ nav .navItems .navItem {
   font-size: 20px;
 }
 nav .navItems .active::first-letter {
-  color: rgb(0, 0, 0);
+  color: white;
 }
 nav .navItems .navItem:hover::first-letter {
-  color: rgb(51, 54, 74);
+  color: white;
 }
 nav .languageSwitcher {
   position: fixed;
@@ -150,9 +150,6 @@ nav .contactComponents .contactComponent a:active svg {
   flex-direction: column;
   gap: 5vh;
 }
-.landingPage span {
-  color: red;
-}
 .landingPage .main {
   height: calc(100vh - 80px);
   display: flex;
@@ -163,7 +160,7 @@ nav .contactComponents .contactComponent a:active svg {
 .landingPage .main .imageplaceholder {
   width: 400px;
   height: 478px;
-  background: #2f43a6;
+  background: #4e557a;
   opacity: 0.8;
   transition: all 0.5s;
   border-top-right-radius: 40px;
@@ -178,7 +175,7 @@ nav .contactComponents .contactComponent a:active svg {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background: #2f43a6;
+  background: #4e557a;
   opacity: 0.8;
   transition: all 0.5s;
   border-bottom-right-radius: 40px;
@@ -335,10 +332,22 @@ nav .contactComponents .contactComponent a:active svg {
 .contactPage {
   height: 100vh;
   display: flex;
-  flex-direction: column;
   gap: 20px;
   align-items: center;
   justify-content: center;
+}
+.contactPage .contactForm {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 5px;
+}
+.contactPage .contactForm .messageInput {
+  max-width: 400px;
+  min-width: 400px;
+  max-height: 300px;
+  min-height: 60px;
+  height: 80px;
 }
 .contactPage .businessCard {
   background: rgba(39, 114, 151, 0.6705882353);
@@ -443,4 +452,39 @@ nav .contactComponents .contactComponent a:active svg {
     border: none;
     border-radius: 0;
   }
+}
+.contactFormInput {
+  font-family: "Segoe UI", sans-serif;
+}
+
+.contactFormInput {
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: 2px solid #15384f;
+  background-color: #112e42;
+  border-radius: 20px;
+  color: white;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.submitButton {
+  border: 2px solid #15384f;
+  background-color: #112e42;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  padding: 5px;
+  align-self: center;
+  width: -moz-fit-content;
+  width: fit-content;
 }/*# sourceMappingURL=App.css.map */

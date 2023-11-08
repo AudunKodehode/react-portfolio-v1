@@ -9,10 +9,6 @@ export default function Contactpage({ language }) {
     
     <div className="contactPage">
       
-
-    <ContactForm language={language} />
-
-      
       <div className="businessCard">
         {language === "no" ? (
           <>
@@ -58,6 +54,8 @@ export default function Contactpage({ language }) {
           </>
         )}
       </div>
+      
+    <ContactForm language={language} />
     </div>
   );
 }

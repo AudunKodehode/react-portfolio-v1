@@ -95,7 +95,7 @@ nav {
     border-right: 2px solid $navTopBottomBorder;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    width: 550px;
+    width: 450px;
     height: 60px;
     display: flex;
     gap: 12px;
@@ -112,10 +112,10 @@ nav {
       font-size: 20px;
     }
     .active::first-letter {
-      color: $textAccent4;
+      color: white;
     }
     .navItem:hover::first-letter {
-      color: $textAccent2;
+      color: white;
     }
 
 
@@ -199,9 +199,6 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 5vh;
-  span{
-    color: red;
-  }
   .main {
     height: calc(100vh - 80px);
     display: flex;
@@ -211,7 +208,7 @@ nav {
     .imageplaceholder {
       width: 400px;
       height: 478px;
-      background: #2f43a6;
+      background: #4e557a;
       opacity:0.8;
       transition: all 0.5s;
       border-top-right-radius: 40px;
@@ -226,7 +223,7 @@ nav {
       display: flex;
       flex-direction: column;
       gap: 20px;
-      background: #2f43a6;
+      background: #4e557a;
       opacity:0.8;
       transition: all 0.5s;
       border-bottom-right-radius: 40px;
@@ -385,10 +382,23 @@ nav {
 .contactPage {
   height: 100vh;
   display: flex;
-  flex-direction: column;
   gap: 20px;
   align-items: center;
   justify-content: center;
+  .contactForm{
+    display:flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 5px;
+    .messageInput{
+      max-width: 400px;
+      min-width: 400px;
+
+      max-height: 300px;
+      min-height: 60px;
+      height: 80px;
+    }
+  }
   .businessCard{
     background: #277297ab;
     padding: 40px;
@@ -502,4 +512,39 @@ opacity: 0.5;
 
     border-radius: 0;
   }
+}
+
+
+.contactFormInput {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contactFormInput  {
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: 2px solid #15384f;
+  background-color: #112e42;
+  border-radius: 20px;
+  color:white;
+}
+
+label{
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.submitButton{
+  border: 2px solid #15384f;
+  background-color: #112e42;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  padding: 5px;
+  align-self: center;
+  width: fit-content;
 }
