@@ -428,7 +428,44 @@ nav {
     }
   }
 }
+.contactFormInput {
+  font-family: "Segoe UI", sans-serif;
+}
 
+.contactFormInput {
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: 2px solid #15384f;
+  background-color: #112e42;
+  border-radius: 20px;
+  color: white;
+}
+
+.contactForm p {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.submitButton {
+  border: 2px solid #15384f;
+  background-color: #112e42;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  padding: 10px;
+  align-self: center;
+  width: fit-content;
+}
+.contactFormSubmitted{
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+}
 .fadeIn {
   animation: fadeIn 1s ease-in-out;
 }
@@ -551,36 +588,3 @@ nav {
   }
 }
 
-.contactFormInput {
-  font-family: "Segoe UI", sans-serif;
-}
-
-.contactFormInput {
-  font-size: 100%;
-  padding: 0.8em;
-  outline: none;
-  border: 2px solid #15384f;
-  background-color: #112e42;
-  border-radius: 20px;
-  color: white;
-}
-
-.contactForm p {
-  font-size: 16px;
-  font-weight: 600;
-  color: white;
-  font-weight: 700;
-  margin-left: 10px;
-  margin-top: 5px;
-}
-.submitButton {
-  border: 2px solid #15384f;
-  background-color: #112e42;
-  border-radius: 20px;
-  font-size: 16px;
-  font-weight: 300;
-  color: white;
-  padding: 10px;
-  align-self: center;
-  width: fit-content;
-}
