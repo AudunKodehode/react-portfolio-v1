@@ -1,4 +1,4 @@
-import { SiHtml5, SiCss3, SiJavascript, SiMidi, SiArduino, SiFrontendmentor, SiSharp, SiReact } from "react-icons/si";
+import { SiHtml5, SiCss3, SiJavascript, SiMidi, SiArduino, SiFrontendmentor, SiSharp, SiReact, SiSass } from "react-icons/si";
 import logo3dprint from "../../../public/icons/3dprint.svg"
 import logonightscout from "../../../public/icons/nightscout.svg"
 import windowsforms from "../../../public/icons/windowsforms.svg"
@@ -17,6 +17,7 @@ return (
             {type === "NightScout" ? <div className="projectIcon"><img src={logonightscout} alt="nightscout" />Nightscout</div>: ""}
             {type === "C#" ? <div className="projectIcon"><SiSharp />C#</div>: ""}
             {type === "WindowsForms" ? <div className="projectIcon"><img src={windowsforms} alt="Windows Forms" />Windows Forms</div>: ""}
+            {type === "Sass" ? <div className="projectIcon"><SiSass />Sass</div>: ""}
 
     </>
 )

@@ -101,6 +101,17 @@ const projectsArray = [
         descriptionNo: "Kalkulator lagd med HTML, CSS og Js. Inneholder noen easter-eggs.",
         imageUrl: "https://github.com/AudunKodehode/Kalkulator/blob/main/image.png?raw=true",
         localUrl: "/projects/projects/calc.webp"
+    },
+    {
+        name: "React Portfolio V1",
+        nameNo: "React Portfølje V1",
+        url: "https://github.com/AudunKodehode/react-portfolio-v1",
+        repository: "https://github.com/AudunKodehode/react-portfolio-v1",
+        languages: ["React", "Sass", "JavaScript"],
+        description: "My first portfolio made with React and Sass.",
+        descriptionNo: "Min første portfølje lagd med React og Sass",
+        imageUrl: "https://github.com/AudunKodehode/Kalkulator/blob/main/image.png?raw=true",
+        localUrl: "/projects/projects/portfoliov1.webp"
     }
 ];
 
