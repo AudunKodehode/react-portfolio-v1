@@ -14,7 +14,7 @@ export default function NavBar({ pathname, language, setLanguage }) {
       {language === "no" ? (
         <>
           <div className="navItems">
-            <Navitem></Navitem>
+            
 
 
             <Navitem

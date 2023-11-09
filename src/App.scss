@@ -294,7 +294,7 @@ nav {
   align-items: center;
   justify-content: center;
   .projectTab {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -398,12 +398,14 @@ nav {
     flex-direction: column;
     width: 400px;
     gap: 5px;
+    overflow-x: hidden;
+    .contactFormInput {
+      width: 100%;
+    }
     .messageInput {
       max-width: 400px;
-      min-width: 400px;
-
+      width: 100%;
       max-height: 300px;
-      min-height: 60px;
       height: 80px;
     }
   }
@@ -490,11 +492,11 @@ nav {
   }
 }
 @media screen and (max-width: 990px) {
-  #root > div > div > div.mainText{
+  #root > div > div > div.mainText {
     margin-top: 120px;
   }
-  #root > div > div > div.imageplaceholder.fadeIn{
-    display:none;
+  #root > div > div > div.imageplaceholder.fadeIn {
+    display: none;
   }
 }
 @media screen and (max-width: 770px) {
@@ -503,7 +505,7 @@ nav {
   }
 }
 @media screen and (max-width: 630px) {
-  #root > div > div > div.mainText{
+  #root > div > div > div.mainText {
     width: 100%;
     border-radius: 0;
   }
@@ -518,21 +520,26 @@ nav {
   }
 }
 @media screen and (max-width: 450px) {
-  form * {
-    max-width: 100%;
-    width: 100%;
-    min-width: none;
-  }
-  .projectCard {
+  .contactPage .contactForm,
+  .contactFormInput {
     width: 100%;
   }
-
 }
 @media screen and (max-width: 410px) {
+  nav .navItems {
+    justify-content: center;
+    gap: 0;
+  }
+  #root > nav > div.navItems > a {
+    padding: none;
+  }
+
   .languageSwitcher {
     transform: translateY(50px);
   }
-
+  #root > div > form > div {
+    background-color: red;
+  }
 }
 @media screen and (max-width: 350px) {
   .projectCard {

@@ -357,12 +357,15 @@ nav .contactComponents .contactComponent a:active svg {
   flex-direction: column;
   width: 400px;
   gap: 5px;
+  overflow-x: hidden;
+}
+.contactPage .contactForm .contactFormInput {
+  width: 100%;
 }
 .contactPage .contactForm .messageInput {
   max-width: 400px;
-  min-width: 400px;
+  width: 100%;
   max-height: 300px;
-  min-height: 60px;
   height: 80px;
 }
 .contactPage .businessCard {
@@ -476,18 +479,24 @@ nav .contactComponents .contactComponent a:active svg {
   }
 }
 @media screen and (max-width: 450px) {
-  form * {
-    max-width: 100%;
-    width: 100%;
-    min-width: none;
-  }
-  .projectCard {
+  .contactPage .contactForm,
+  .contactFormInput {
     width: 100%;
   }
 }
 @media screen and (max-width: 410px) {
+  nav .navItems {
+    justify-content: center;
+    gap: 0;
+  }
+  #root > nav > div.navItems > a {
+    padding: none;
+  }
   .languageSwitcher {
     transform: translateY(50px);
+  }
+  #root > div > form > div {
+    background-color: red;
   }
 }
 @media screen and (max-width: 350px) {

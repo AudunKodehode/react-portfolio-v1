@@ -49,8 +49,9 @@ const ContactForm = ({ language }) => {
 
   return (
     <>
+    <div className="contactForm">
       <form action={FORM_ENDPOINT} onSubmit={handleSubmit} method="POST">
-        <div className="contactForm">
+        
             <p>{language === "no" ? "Navn" : "Name"}</p>
           <input
             type="text"
@@ -87,8 +88,8 @@ const ContactForm = ({ language }) => {
             <button className="submitButton" type="submit">
               {language === "no" ? <>Send melding</> : (<>Send message</>)}
             </button>
-        </div>
       </form>
+        </div>
     </>
   );
 };
