@@ -28,7 +28,7 @@ const arduinoArray = [
         url: "https://github.com/AudunKodehode/Adafruit-SSD1306-display-designer",
         repository: "https://github.com/AudunKodehode/Adafruit-SSD1306-display-designer",
         languages: ["Arduino", "ESP8266", "WindowsForms", "C#"],
-        description: "Application to design layout and style on SSD1306 along with Arduino code.",
+        description: "WindowsForms application and website to design layout and style on SSD1306 along with Arduino code.",
         descriptionNo: "WindowsForms og nettside for å enklere style innhold og layout på en SSD1306 skjerm",
         imageUrl: "https://github.com/AudunKodehode/esp8266-0.96-oled-module-base/blob/main/esp8266-0.96-oled-module-nightscout/ESP8266NIGHTSCOUT.jpg?raw=true",
         localUrl: "/projects/arduino/ssd1306designer.webp"
