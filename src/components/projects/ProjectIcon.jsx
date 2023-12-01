@@ -2,6 +2,7 @@ import { SiHtml5, SiCss3, SiJavascript, SiMidi, SiArduino, SiFrontendmentor, SiS
 import logo3dprint from "../../../public/icons/3dprint.svg"
 import logonightscout from "../../../public/icons/nightscout.svg"
 import windowsforms from "../../../public/icons/windowsforms.svg"
+import { AiTwotoneApi } from "react-icons/ai";
 export default function ProjectIcon({type}){
 return (
     <>
@@ -18,6 +19,7 @@ return (
             {type === "C#" ? <div className="projectIcon"><SiSharp />C#</div>: ""}
             {type === "WindowsForms" ? <div className="projectIcon"><img src={windowsforms} alt="Windows Forms" />Windows Forms</div>: ""}
             {type === "Sass" ? <div className="projectIcon"><SiSass />Sass</div>: ""}
+            {type === "API" ? <div className="projectIcon"><AiTwotoneApi />API</div>: ""}
 
     </>
 )

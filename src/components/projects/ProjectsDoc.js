@@ -8,7 +8,6 @@ const arduinoArray = [
         languages: ["Arduino", "MIDI", "3Dprint"],
         description: "Arduino-Nano code and STL files for creating a 4-button guitar pedal box to control MIDI on PC.",
         descriptionNo: "Arduino Nano kode og STL fil for å lage en 4-knapps guitar pedalboks for å kontrollere MIDI på PC",
-        imageUrl: "https://github.com/AudunKodehode/Arduino-Nano-Midi-Controller/blob/main/Arduino-Nano-Midi-Controller.png?raw=true",
         localUrl: "/projects/arduino/arduinomidi.webp"
     },
     {
@@ -19,7 +18,6 @@ const arduinoArray = [
         languages: ["Arduino", "ESP8266", "API", "NightScout", "3Dprint"],
         description: "Fetch data from Nightscout and display it on 0.96'' OLED display",
         descriptionNo: "Henter data via Nightscout API og viser data på en 0.96 tommer OLED skjerm",
-        imageUrl: "https://github.com/AudunKodehode/esp8266-0.96-oled-module-base/blob/main/esp8266-0.96-oled-module-nightscout/ESP8266NIGHTSCOUT.jpg?raw=true",
         localUrl: "/projects/arduino/esp8266nightscout.webp"
     },
     {
@@ -30,7 +28,6 @@ const arduinoArray = [
         languages: ["Arduino", "ESP8266", "WindowsForms", "C#"],
         description: "WindowsForms application and website to design layout and style on SSD1306 along with Arduino code.",
         descriptionNo: "WindowsForms og nettside for å enklere style innhold og layout på en SSD1306 skjerm",
-        imageUrl: "https://github.com/AudunKodehode/esp8266-0.96-oled-module-base/blob/main/esp8266-0.96-oled-module-nightscout/ESP8266NIGHTSCOUT.jpg?raw=true",
         localUrl: "/projects/arduino/ssd1306designer.webp"
     },
 ]
@@ -44,7 +41,6 @@ const projectsArray = [
         languages: ["HTML", "CSS", "JavaScript"],
         description: "Generate random colors and get the HEX-code.",
         descriptionNo: "Tilfeldig farge-generator.",
-        imageUrl: "https://github.com/AudunKodehode/ColorGenerator/blob/main/image.png?raw=true",
         localUrl: "/projects/projects/colorgenerator.webp"
     },
     {
@@ -55,7 +51,6 @@ const projectsArray = [
         languages: ["HTML", "CSS", "JavaScript"],
         description: "Heads or tail made using HTML, CSS and Js.",
         descriptionNo: "Kron eller mynti-spill lagd med HTML, CSS and Js.",
-        imageUrl: "https://github.com/AudunKodehode/Kron-eller-mynt/blob/main/image.png?raw=true",
         localUrl: "/projects/projects/headsortails.webp"
     },
     {
@@ -66,7 +61,6 @@ const projectsArray = [
         languages: ["HTML", "CSS", "JavaScript"],
         description: "My first test using nationalize.io API",
         descriptionNo: "Mitt aller første javascript API-prosjekt",
-        imageUrl: "https://github.com/AudunKodehode/Nationalize/blob/main/image.png?raw=true",
         localUrl: "/projects/projects/nationalize.webp"
     },
     {
@@ -77,7 +71,6 @@ const projectsArray = [
         languages: ["HTML", "CSS", "JavaScript"],
         description: "Simple to-do-list that uses cookies to store the list locally so you can use it later on.",
         descriptionNo: "Gjøremål-liste som bruker cookies til å lagre listen lokalt slik at du kan bruke den senere.",
-        imageUrl: "https://github.com/AudunKodehode/ToDoList/blob/main/image.png?raw=true",
         localUrl: "/projects/projects/todo.webp"
     },
     {
@@ -88,7 +81,6 @@ const projectsArray = [
         languages: ["HTML", "CSS", "JavaScript"],
         description: "Generate a virtual deck and draw a random card",
         descriptionNo: "Generer en virtuell kortstokk og trekke et tilfeldig kort",
-        imageUrl: "https://github.com/AudunKodehode/RandomCard/blob/main/image.png?raw=true",
         localUrl: "/projects/projects/randomcard.webp"
     },
     {
@@ -99,7 +91,6 @@ const projectsArray = [
         languages: ["HTML", "CSS", "JavaScript"],
         description: "Calculator made with HTML, CSS and Js. Contains a few easter-eggs.",
         descriptionNo: "Kalkulator lagd med HTML, CSS og Js. Inneholder noen easter-eggs.",
-        imageUrl: "https://github.com/AudunKodehode/Kalkulator/blob/main/image.png?raw=true",
         localUrl: "/projects/projects/calc.webp"
     },
     {
@@ -110,7 +101,6 @@ const projectsArray = [
         languages: ["React", "Sass", "JavaScript"],
         description: "My first portfolio made with React and Sass.",
         descriptionNo: "Min første portfølje lagd med React og Sass",
-        imageUrl: "https://github.com/AudunKodehode/Kalkulator/blob/main/image.png?raw=true",
         localUrl: "/projects/projects/portfoliov1.webp"
     }
 ];
@@ -124,7 +114,6 @@ const frontendmentorArray = [
         languages: ["Frontendmentor", "React", "CSS"],
         description: "FrontendMentor challenge, recreate a functional tipping calculator.",
         descriptionNo: "FrontendMentor utfordring, lag en funksjonell driks-kalkulator.",
-        imageUrl: "https://github.com/AudunKodehode/Frontend-Mentor---Tip-calculator-app/blob/main/image.png?raw=true",
         localUrl: "/projects/frontendmentor/tipcalc.webp"
     },
     {
@@ -135,7 +124,6 @@ const frontendmentorArray = [
         languages: ["Frontendmentor", "React", "CSS"],
         description: "FrontendMentor challenge, recreate a functional calculator",
         descriptionNo: "FrontendMentor utfordring, lag en funksjonell kalkulator.",
-        imageUrl: "https://github.com/AudunKodehode/calculator-app-main/blob/gh-pages/image.png?raw=true",
         localUrl: "/projects/frontendmentor/frontendmentorcalc.webp"
     },
     {
@@ -143,11 +131,60 @@ const frontendmentorArray = [
         nameNo: "IP Address Tracker",
         url: "https://ip-address-tracker-master-mgclean5n-audunkodehode.vercel.app/",
         repository: "https://github.com/AudunKodehode/ip-address-tracker-master",
-        languages: ["Frontendmentor", "React", "CSS"],
+        languages: ["Frontendmentor", "React", "CSS", "API"],
         description: "FrontendMentor challenge, recreate a functional IP-tracking site.",
         descriptionNo: "FrontendMentor utfordring, lag en funksjonell IP-sporings-side.",
-        imageUrl: "https://github.com/AudunKodehode/ip-address-tracker-master/blob/main/image.png?raw=true",
         localUrl: "/projects/frontendmentor/iptrack.webp"
+    },
+    {
+        name: "Social Media Dashboard",
+        nameNo: "SoMe Dashboard",
+        url: "https://social-media-dashboard-with-theme-switcher-master-9qk6788ai.vercel.app/",
+        repository: "https://github.com/AudunKodehode/social-media-dashboard-with-theme-switcher-master",
+        languages: ["Frontendmentor", "React", "Sass"],
+        description: "FrontendMentor challenge, recreate a social media dashboard with theme changer.",
+        descriptionNo: "FrontendMentor utfordring, lag en funksjonell SoMe dashboard med tema-bytter",
+        localUrl: "/projects/frontendmentor/socialmediadashboard.webp"
+    },
+    {
+        name: "FAQ Accordion",
+        nameNo: "FAQ Accordion",
+        url: "https://faq-accordion-sooty.vercel.app/",
+        repository: "https://github.com/AudunKodehode/faq-accordion",
+        languages: ["Frontendmentor", "React", "Sass"],
+        description: "FrontendMentor challenge, recreate a FAQ site with accordions.",
+        descriptionNo: "FrontendMentor utfordring, lag en funksjonell side med FAQ accordions",
+        localUrl: "/projects/frontendmentor/faqaccordion.webp"
+    },
+    {
+        name: "Advice generator",
+        nameNo: "Råd-generator",
+        url: "https://advice-generator-app-eosin-six.vercel.app/",
+        repository: "https://github.com/AudunKodehode/advice-generator-app",
+        languages: ["Frontendmentor", "React", "Sass", "API"],
+        description: "FrontendMentor challenge, recreate a advice generator using API.",
+        descriptionNo: "FrontendMentor utfordring, lag en funksjonell råd-generator ved hjelp av API",
+        localUrl: "/projects/frontendmentor/advicegenerator.webp"
+    },
+    {
+        name: "Expenses chart",
+        nameNo: "Utgiftsdiagram",
+        url: "https://expenses-chart-component-bice.vercel.app/",
+        repository: "https://github.com/AudunKodehode/expenses-chart-component",
+        languages: ["Frontendmentor", "React", "Sass"],
+        description: "FrontendMentor challenge, recreate a expenses chart component.",
+        descriptionNo: "FrontendMentor utfordring, lag en funksjonell utgiftsdiagram.",
+        localUrl: "/projects/frontendmentor/expenseschart.webp"
+    },
+    {
+        name: "Rock paper scissors",
+        nameNo: "Stein saks papir",
+        url: "https://frontendmentor-rock-paper-scissors-teal.vercel.app/",
+        repository: "https://github.com/AudunKodehode/frontendmentor-rock-paper-scissors",
+        languages: ["Frontendmentor", "React", "Sass"],
+        description: "FrontendMentor challenge, recreate a rock, paper, scissors game.",
+        descriptionNo: "FrontendMentor utfordring, lag en funksjonell stein, saks, papir-spill.",
+        localUrl: "/projects/frontendmentor/rockpaperscissors.webp"
     }
 ];
 
